@@ -1,0 +1,8 @@
+{
+  "name": "tonder1",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "4b1b59bb"
+}
