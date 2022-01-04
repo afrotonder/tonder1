@@ -1,17 +1,99 @@
 <ion-header [translucent]="true">
-  <!-- <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header> -->
+  <ion-content [fullscreen]="true">
+    <!-- <ion-card> -->
+    <ion-item>
+      <!-- <ion-title size="large"></ion-title> -->
+      <h1>OFFER</h1>
+    </ion-item>
+    <ion-item lines="none" class="aboutParagraph">
+      <p>
+        <b>Full stack Software Developer </b> with over 6 years of problem
+        solving experience.
 
-<ion-content [fullscreen]="true">
-  <!-- <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header> -->
+        <br />
+        <br />
+        Having worked in many different fields such as health, accounting and
+        education my skill set includes working on Data Indexing apps, personal
+        finance PWAs and Business Data Analysis.
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+        <!-- <br />
+        <br />
+        I'm passionate about optimization and discipline;  -->
+
+        <br />
+        <br />
+        My problem solving skills include:
+
+        <ion-list>
+          <ion-item style="width: 30%" *ngFor="let skill of skillList">
+            <ion-icon class="skillIcon" name="{{skill.icon}}"></ion-icon>
+            {{skill.name}}
+          </ion-item>
+        </ion-list>
+      </p>
+    </ion-item>
+    <!-- </ion-card> -->
+    <ion-item>
+      <!-- <ion-title size="large"></ion-title> -->
+      <h1>STACK</h1>
+    </ion-item>
+    <ion-item lines="none" class="aboutParagraph">
+      <p>
+        My go-to stack:
+
+        <br />
+        <br />
+
+        <ion-list>
+          <ion-item style="width: 100%" *ngFor="let tool of toolList">
+            <ion-icon class="toolIcon" name="{{tool.icon}}"></ion-icon>
+            {{tool.name}}
+          </ion-item>
+        </ion-list>
+
+        <br />
+
+        Other tools and software I have experience with:
+
+        <ion-list>
+          <ion-item style="width: 100%" *ngFor="let tool of otherTools">
+            <ion-icon class="otherToolIcon" name="{{tool.icon}}"></ion-icon>
+            {{tool.name}}
+          </ion-item>
+        </ion-list>
+      </p>
+    </ion-item>
+
+    <ion-item>
+      <!-- <ion-title size="large"></ion-title> -->
+      <h1>HOBBIES, INTERESTS & OTHERS</h1>
+    </ion-item>
+    <ion-item lines="none" class="aboutParagraph">
+      <p>
+        Coding aside, I enjoy horror movies, collecting, drawing, and playing video games. Here's a few of my favs:
+
+        <br />
+        <br />
+        <ion-title>Favorite films</ion-title>
+
+        <ion-list style="display: flex; justify-content: space-between; flex-direction: row;">
+
+          <ion-card class="miscCard" style="width: 55%" *ngFor="let misc of filmList">
+
+
+
+
+          <ion-card-content style="display: flex; justify-content: center;">
+            <img class="miscCardImg" src="{{misc.url}}" alt="">
+          </ion-card-content>
+          <ion-card-header style="text-align: center;">
+            <ion-card-subtitle>{{misc.title}}</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+
+        </ion-list>
+
+      </p>
+    </ion-item>
+  </ion-content>
+</ion-header>

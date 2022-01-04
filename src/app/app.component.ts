@@ -108,18 +108,7 @@ let imgs = [
   }
 ];
 
-let tools = [
-  { name: "JS (ES6+)", source: "../assets/images/js-icon.png"},
-  { name: "HTML", source: "../assets/images/html-icon.png"},
-  { name: "CSS/SCSS", source: "../assets/images/css-icon.png" },
-  { name: "Angular", source: "../assets/images/angular-icon.png" },
-  // { name: "Ionic", source: "../assets/images/ionic.jpg" },
-  // { name: "iOS", source: xcode_icon },
-  { name: "Ionic", source: "https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ionic-512.png" },
-  // { name: "Android", source: android_icon },
-  // { name: "Capacitor", source: "./images/capacitor-icon.png" },
-  { name: "Capacitor", source: "https://seeklogo.com/images/C/capacitor-logo-DF3634DD70-seeklogo.com.png" },
-];
+
 
 // set/ renderfooter
 for (let img of imgs) {
@@ -142,27 +131,6 @@ for (let img of imgs) {
   document.getElementById("social-icons").appendChild(elem);
 }
 
-// set/render tools
-// for (let tool of tools) {
-
-//   let elem = document.createElement("div");
-
-//   elem.setAttribute("class", "tool-icons");
-//   elem.setAttribute("style", "width:50px;");
-
-//   // elem.setAttribute("target", "_blank");
-
-//   elem.innerHTML =
-//     `<img src=` +
-//     tool.source +
-//     `  title=` +
-//     tool.name +
-//     ` alt=` +
-//     tool.name +
-//     `/>`;
-
-//   document.getElementById("tools").appendChild(elem);
-// }
 
 
 
