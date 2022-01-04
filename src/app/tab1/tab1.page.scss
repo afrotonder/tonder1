@@ -1,9 +1,5 @@
 @use '../../theme/variables.scss' ;
 
-.aboutParagraph {
-  // margin-bottom: 5%;
-}
-
 .stackParagraph {
   margin-bottom: 10%;
   display: flex;
@@ -49,17 +45,37 @@
  width: 40%;
  height: 400px;
 //  background-color: #b6ddbf;
-background: #F7F8F8;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+// faded pine green
+// background: #F7F8F8;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
+// grade gray
+// background: #bdc3c7;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+// midnight city
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 }
 
 .miscCardImg {
   width: 45%;
+}
+
+.artCardImg {
+  width: 55%;
+}
+
+ion-card-subtitle {
+  color: white !important;
+  font-weight: bold;
 }
 
 

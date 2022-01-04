@@ -32,3 +32,17 @@
 @import '~swiper/scss/scrollbar';
 @import '~swiper/scss/zoom';
 @import '~@ionic/angular/css/ionic-swiper';
+
+
+  @font-face {
+    font-family: 'ShareTech-Regular';    //This is what we are going to call
+    src: url('./assets/ShareTech-Regular.ttf');
+
+
+}
+
+:root {
+
+  font-family: 'ShareTech-Regular' !important;
+
+}

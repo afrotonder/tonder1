@@ -1,11 +1,11 @@
 <ion-header [translucent]="true">
   <ion-content [fullscreen]="true">
-    <!-- <ion-card> -->
+    <!-- OFFER  -->
     <ion-item>
       <!-- <ion-title size="large"></ion-title> -->
       <h1>OFFER</h1>
     </ion-item>
-    <ion-item lines="none" class="aboutParagraph">
+    <ion-item lines="none">
       <p>
         <b>Full stack Software Developer </b> with over 6 years of problem
         solving experience.
@@ -32,12 +32,13 @@
         </ion-list>
       </p>
     </ion-item>
-    <!-- </ion-card> -->
+    <!-- END OFFER  -->
+
+    <!-- SKILLS  -->
     <ion-item>
-      <!-- <ion-title size="large"></ion-title> -->
       <h1>STACK</h1>
     </ion-item>
-    <ion-item lines="none" class="aboutParagraph">
+    <ion-item lines="none">
       <p>
         My go-to stack:
 
@@ -63,37 +64,72 @@
         </ion-list>
       </p>
     </ion-item>
+    <!-- END SKILLS  -->
 
+    <!-- MISC  -->
     <ion-item>
       <!-- <ion-title size="large"></ion-title> -->
       <h1>HOBBIES, INTERESTS & OTHERS</h1>
     </ion-item>
-    <ion-item lines="none" class="aboutParagraph">
+    <ion-item lines="none">
       <p>
-        Coding aside, I enjoy horror movies, collecting, drawing, and playing video games. Here's a few of my favs:
+        Coding aside, I enjoy horror movies, collecting, drawing, tech and playing
+        video games. Here's a few of my favs:
 
         <br />
         <br />
         <ion-title>Favorite films</ion-title>
-
-        <ion-list style="display: flex; justify-content: space-between; flex-direction: row;">
-
-          <ion-card class="miscCard" style="width: 55%" *ngFor="let misc of filmList">
-
-
-
-
-          <ion-card-content style="display: flex; justify-content: center;">
-            <img class="miscCardImg" src="{{misc.url}}" alt="">
-          </ion-card-content>
-          <ion-card-header style="text-align: center;">
-            <ion-card-subtitle>{{misc.title}}</ion-card-subtitle>
-          </ion-card-header>
-        </ion-card>
-
+        <!-- TODO: IMPLEMENT SWIPER SO WE CAN ADD MORE MOVIES AND MISC STUFF HORIZONTALLY -->
+        <ion-list
+          style="
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+          "
+        >
+          <ion-card
+            class="miscCard"
+            style="width: 55%"
+            *ngFor="let misc of filmList"
+          >
+            <ion-card-content style="display: flex; justify-content: center">
+              <img class="miscCardImg" src="{{misc.url}}" alt="" />
+            </ion-card-content>
+            <ion-card-header style="text-align: center">
+              <ion-card-subtitle>{{misc.title}}</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
         </ion-list>
+
+        <br />
+        <br />
+        <ion-title>My Art</ion-title>
+        <!-- TODO: IMPLEMENT SWIPER SO WE CAN ADD MORE MOVIES AND MISC STUFF HORIZONTALLY -->
+        <ion-list
+          style="
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+          "
+        >
+          <ion-card
+            class="miscCard"
+            style="width: 55%"
+            *ngFor="let misc of artList"
+          >
+            <ion-card-content style="display: flex; justify-content: center">
+              <img class="artCardImg" src="{{misc.url}}" alt="" />
+            </ion-card-content>
+            <ion-card-header style="text-align: center">
+              <ion-card-subtitle>{{misc.title}}</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-list>
+
+
 
       </p>
     </ion-item>
+    <!-- END MISC  -->
   </ion-content>
 </ion-header>

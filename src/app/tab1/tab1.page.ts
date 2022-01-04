@@ -10,13 +10,14 @@ SwiperCore.use([Autoplay, Keyboard, Pagination, Scrollbar, Zoom]);
 
 export class Tab1Page {
 
-  stackParagraph: string ;
-  otherParagraph: string ;
+  stackParagraph: string;
+  otherParagraph: string;
   skillList: Array<any>;
   toolList: Array<any>;
   otherTools: Array<any>;
   miscList: Array<any>;
   filmList: Array<any>;
+  artList: Array<any>;
 
   constructor() {
 
@@ -25,14 +26,14 @@ export class Tab1Page {
     this.otherParagraph = ``
 
 
-    this.skillList = [{'name': 'User focused UX/UI Design', 'icon': 'prism-outline'},
-                      {'name': 'Hybrid Mobile App Development', 'icon': 'phone-portrait-outline'},
-                      {'name': 'Database Creation/Maintanence', 'icon': 'server-outline'},
-                      {'name': 'Script Automation', 'icon': 'code-slash-outline'},
-                      {'name': 'PWA Deployments', 'icon': 'cloud-done-outline'},
-                      {'name': 'Data Analysis via Reports', 'icon': 'analytics-outline'},
-                      {'name': 'UX/UI Design', 'icon': 'pizza-outline'},
-                      ]
+    this.skillList = [{ 'name': 'User focused UX/UI Design', 'icon': 'prism-outline' },
+    { 'name': 'Hybrid Mobile App Development', 'icon': 'phone-portrait-outline' },
+    { 'name': 'Database Creation/Maintanence', 'icon': 'server-outline' },
+    { 'name': 'Script Automation', 'icon': 'code-slash-outline' },
+    { 'name': 'PWA Deployments', 'icon': 'cloud-done-outline' },
+    { 'name': 'Data Analysis via Reports', 'icon': 'analytics-outline' },
+    { 'name': 'UX/UI Design', 'icon': 'pizza-outline' },
+    ]
 
 
 
@@ -50,8 +51,8 @@ export class Tab1Page {
     // ];
 
     this.toolList = [
-      { name: "JS (ES6+)", icon: "logo-javascript", desc: ''},
-      { name: "HTML", icon: "logo-html5"},
+      { name: "JS (ES6+)", icon: "logo-javascript", desc: '' },
+      { name: "HTML", icon: "logo-html5" },
       { name: "CSS/SCSS", icon: "logo-css3" },
       { name: "Angular", icon: "logo-angular" },
       { name: "Ionic", icon: "logo-ionic" },
@@ -60,22 +61,38 @@ export class Tab1Page {
 
 
     this.otherTools = [
-      { name: "iOS", icon: "logo-apple-appstore", desc: ''},
-      { name: "Android", icon: "logo-android"},
-      { name: "Linux", icon: "logo-tux"},
+      { name: "iOS", icon: "logo-apple-appstore", desc: '' },
+      { name: "Android", icon: "logo-android" },
+      { name: "Linux", icon: "logo-tux" },
     ];
 
     this.filmList = [
-      { name: "", icon: "", title: 'The Texas Chainsaw Massacre (1974)', url: 'https://i.pinimg.com/originals/d3/7c/b1/d37cb1bb6eaca43dfe4dff026fac8a3d.jpg'},
-      { name: "", icon: "", title: 'Grandmas Boy (2006)', url: 'https://m.media-amazon.com/images/I/51tuHl2opSL._AC_.jpg',},
-      { name: "", icon: "", title: 'As Above, So Below (2014)', url: 'https://m.media-amazon.com/images/M/MV5BMTQzNzg0NDI2MF5BMl5BanBnXkFtZTgwMzgxNzY2MTE@._V1_FMjpg_UX1000_.jpg'},
+      { name: "", icon: "", title: 'The Texas Chainsaw Massacre (1974)', url: 'https://i.pinimg.com/originals/d3/7c/b1/d37cb1bb6eaca43dfe4dff026fac8a3d.jpg' },
+      { name: "", icon: "", title: 'Grandmas Boy (2006)', url: 'https://m.media-amazon.com/images/I/51tuHl2opSL._AC_.jpg', },
+      { name: "", icon: "", title: 'As Above, So Below (2014)', url: 'https://m.media-amazon.com/images/M/MV5BMTQzNzg0NDI2MF5BMl5BanBnXkFtZTgwMzgxNzY2MTE@._V1_FMjpg_UX1000_.jpg' },
     ];
 
-
+    this.artList = [
+      { src: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/89115994634030338325585499613716342618534582736938746437257675386745633374209",
+        icon: "",
+        title: 'Charlie #58',
+        url: 'https://lh3.googleusercontent.com/rvrXEEwSNTl2DM9ny6Xu4yPDa_vv5ZjFyVKB3fl7L4c-EJPvAX8NSXuMgugOwKwsW3JfuAFkWxe9KvYLd2r9QPbb5cboIdiHq9VSwQ=s0'
+      },
+      { src: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/89115994634030338325585499613716342618534582736938746437257675427427563601921",
+        icon: "",
+        title: 'Charlie #95',
+        url: 'https://lh3.googleusercontent.com/LQX1m_MUAxx-oLCeW5g9KyzK6omRCzwaytdMMas7bn6e2387aZ-AX_mXHCvzUmgrZGx37F71LGz325WhejfRG3zDyiKCv_Zsy2v5=s0',
+      },
+      { src: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/89115994634030338325585499613716342618534582736938746437257675397740749651969",
+        icon: "",
+        title: 'Charlie #68',
+        url: 'https://lh3.googleusercontent.com/C2INFCaJ6zjvvOEeKvSEGnBtCVT2e57RRSij3IEaUHkqmsXhezgZCybInJ0RII7OVgUWHqJMTFlWatDTidE-7K7ODCGRL9dXgh0h=s0'
+      },
+    ];
 
   }
 
-  ngAfterViewInit()	{
+  ngAfterViewInit() {
     // this.setTools()
   }
 
