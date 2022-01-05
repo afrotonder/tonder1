@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-
+import { initializeApp } from "firebase/app";
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -28,7 +28,18 @@ const title = "Software Developer"
 const slogan = "Full-time problem solver";
 const job1 = "TuChequera.com";
 const job2 = "APS Health";
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyA1Bi9Dd9pSPyqeolk7AJhQAQD1tEvTGaA",
+  authDomain: "tonder1-bd704.firebaseapp.com",
+  projectId: "tonder1-bd704",
+  storageBucket: "tonder1-bd704.appspot.com",
+  messagingSenderId: "346941604927",
+  appId: "1:346941604927:web:420ecd13afe955cb3d248a"
+};
 
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 document.getElementById("uname").innerText = uname ;
 
 document.getElementById("title").innerText = title ;
