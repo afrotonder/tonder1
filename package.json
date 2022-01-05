@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
-  "heroku-postbuild":"ng build -prod",
+  "heroku-postbuild": "ng build -- aot --prod",
+  "engine": {
+    "node": "14.17.0",
+    "npm": "6.14.13"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -14,7 +18,9 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "~13.0.1",
     "@angular/common": "~13.0.0",
+    "@angular/compiler": "~13.0.0",
     "@angular/core": "~13.0.0",
     "@angular/forms": "~13.0.0",
     "@angular/platform-browser": "~13.0.0",
@@ -28,14 +34,13 @@
     "@ionic/angular": "^6.0.0",
     "@ionic/app-scripts": "^3.2.4",
     "cordova-plugin-document-viewer": "^1.0.0",
+    "express": "^4.17.2",
+    "path": "^0.12.7",
     "rxjs": "~6.6.0",
     "swiper": "^7.4.1",
     "tslib": "^2.2.0",
-    "zone.js": "~0.11.4",
-    "@angular/cli": "~13.0.1",
-    "@angular/compiler": "~13.0.0",
-    "typescript": "~4.4.4"
-
+    "typescript": "~4.4.4",
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.0.1",
@@ -54,6 +59,7 @@
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
+    "enhanced-resolve": "^5.8.3",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",
