@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
-  "heroku-postbuild":"ng build --configuration=production",
+  "heroku-postbuild":"ng build -prod",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -31,7 +31,11 @@
     "rxjs": "~6.6.0",
     "swiper": "^7.4.1",
     "tslib": "^2.2.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "@angular/cli": "~13.0.1",
+    "@angular/compiler": "~13.0.0",
+    "typescript": "~4.4.4"
+
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.0.1",
