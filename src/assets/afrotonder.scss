@@ -188,11 +188,14 @@ ul {
   margin-top: 27%;
 }
 
-// #meet {
-//   // margin-top: %;
-// }
-
 @media only screen and (max-width: 600px) {
+  // TODO: change this hack for somethig appropriate
+  // this 'hides' ionic app area
+  .mainSide {
+    width: 100% !important;
+    z-index: 1000;
+
+  }
   /* //       .bats:hover {
     //         background-image: url('assets/bat-effect.jpg');
     //         background-repeat:no-repeat;
@@ -248,10 +251,11 @@ ul {
   }
 
   #description {
-    display: flex !important;
-    justify-content: space-evenly;
+    // display: flex !important;
+    // justify-content: space-evenly;
     // flex-direction: column;
-    text-align: left;
+    // text-align: left;
+    margin-top: -5%;
   }
   #uname {
     color: $lightText;
@@ -262,7 +266,7 @@ ul {
   }
 
   #meet {
-    margin-top: -10%;
+    // margin-top: -10%;
   }
 
   #feats {
@@ -273,8 +277,8 @@ ul {
     display: flex;
     justify-content: flex-start;
     // height: 2em;
-    background-color: $bg;
-    margin-left: -1em;
+    // background-color: $bg;
+    margin-left: 1%;
   }
   // #social-icons img {
   //   // height: 2em;
@@ -324,13 +328,14 @@ ul {
   .footer-text-container {
     display: flex;
     justify-content: center;
-    margin-top: 30%;
+    margin-top: 0%;
   }
 
   .footer-text {
     font-size: 10px;
     color: $lightText;
   }
+
 }
 /* END OF MEDIA QUERY */
 

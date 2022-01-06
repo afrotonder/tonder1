@@ -21,8 +21,8 @@ export class AppComponent {
 
   init() {
     // ---------- SET AVATAR DATA ----------
-const uname = "Omar Rosado Ramirez";
-const sm_uname = "O. Rosado Ramirez";
+const uname = "Omar Rosado Ramírez";
+const sm_uname = "O. Rosado Ramírez";
 const handle = "afrotonder";
 const title = "Software Developer"
 const slogan = "Full-time problem solver";
