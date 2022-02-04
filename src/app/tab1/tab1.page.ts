@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import SwiperCore, { Autoplay, Keyboard, Pagination, Scrollbar, Zoom } from 'swiper';
-SwiperCore.use([Autoplay, Keyboard, Pagination, Scrollbar, Zoom]);
+// import SwiperCore, { Autoplay, Keyboard, Pagination, Scrollbar, Zoom } from 'swiper';
+// SwiperCore.use([Autoplay, Keyboard, Pagination, Scrollbar, Zoom]);
 
 @Component({
   selector: 'app-tab1',
@@ -67,9 +67,11 @@ export class Tab1Page {
     ];
 
     this.filmList = [
-      { name: "", icon: "", title: 'The Texas Chainsaw Massacre (1974)', url: 'https://i.pinimg.com/originals/d3/7c/b1/d37cb1bb6eaca43dfe4dff026fac8a3d.jpg' },
-      { name: "", icon: "", title: 'Grandmas Boy (2006)', url: 'https://m.media-amazon.com/images/I/51tuHl2opSL._AC_.jpg', },
-      { name: "", icon: "", title: 'As Above, So Below (2014)', url: 'https://m.media-amazon.com/images/M/MV5BMTQzNzg0NDI2MF5BMl5BanBnXkFtZTgwMzgxNzY2MTE@._V1_FMjpg_UX1000_.jpg' },
+      { name: "", icon: "", title: 'The Texas Chainsaw Massacre (1974)', url: '../../assets/images/tcm.jpg' },
+      { name: "", icon: "", title: 'Grandmas Boy (2006)', url: '../../assets/images/grandmasBoy.jpg', },
+      // { name: "", icon: "", title: 'As Above, So Below (2014)', url: 'https://m.media-amazon.com/images/M/MV5BMTQzNzg0NDI2MF5BMl5BanBnXkFtZTgwMzgxNzY2MTE@._V1_FMjpg_UX1000_.jpg' },
+      { name: "", icon: "", title: 'Hackers (1995)', url: '../../assets/images/hackers.jpg' },
+
     ];
 
     this.artList = [

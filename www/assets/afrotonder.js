@@ -1,6 +1,6 @@
 // ---------- SET AVATAR DATA ----------
-const uname = "Omar Rosado Ramirez";
-const sm_uname = "O. Rosado Ramirez";
+const uname = "Omar Rosado Ramírez";
+const sm_uname = "O. Rosado Ramírez";
 const handle = "afrotonder";
 const slogan = "Full-time problem solver";
 const job1 = "TuChequera.com";

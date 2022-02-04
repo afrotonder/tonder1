@@ -1,29 +1,63 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Developer Portfolio
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <!-- <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header> -->
-
+<ion-content>
   <ion-item>
-  <!-- <ion-title size="large"></ion-title> -->
-  gsgsg
-  *ngIf="segrt
-  s
-  gs
-  gts
-  rgts
-  rtg
-  srtg;else templateName"
-</ion-item>
+    <h1>Developer Portfolio</h1>
+  </ion-item>
+ <ion-list>
+    
+  <ion-item *ngFor="let item of portfolioItems">
 
-  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
+<!-- header left column content -->
+    <ion-item lines="none" slot="start" class="portfolioAvatar" style="top: 0; position: absolute; margin-top: 10px;">
+      <a href="{{item.src}}" target="_blank" >
+        <img  style="width: 50px; border-radius: 50%; margin-top: 2%; background-color: white; height: 50px;"src="{{item.img}}" />
+      </a>
+    </ion-item>
+    <!-- middle content -->
+    <ion-list lines="none" style="display: flex; flex-direction: column; margin-left: 90px; width: 55%;">
+      <!-- header data -->
+      <div>
+          <ion-label> 
+          <h1>{{item.name}}</h1> <p>{{item.workedFrom}}</p>
+          <h3>{{item.jobTitle}}</h3>
+        </ion-label>
+      </div>
+      <!-- positon body -->
+      <div>
+        <p>{{item.desc}}</p>
+        <p>{{item.myPosition}}</p>
+        <ion-list>
+            <p lines="none" *ngFor="let task of item.tasks">
+            <ion-icon name="planet-outline"></ion-icon> {{task.nm}}
+        </p>
+        </ion-list>
+      </div>
+
+      <div style="display: flex;  flex-direction: row;">
+        <!-- <ion-icon name="{{item.stack[i]}}"></ion-icon>  -->
+        <img  *ngFor="let item of item.stack" src="{{item}}" alt="" style="width: 6%; height: 6%; padding: 1%;">
+      </div>
+    </ion-list>
+    
+<!-- right side colunmn content -->
+    <ion-item lines="none" style="margin: auto; width: 40% ;">
+      <!-- <div style="display: flex;  flex-direction: column;">
+        <img  *ngFor="let item of item.gallery" src="{{item}}" alt="" style=" padding: 1%;">
+      </div>    -->
+
+      <ion-slides style=" margin: auto;" pager [options]="{ slidesPerView: true, loop: false }">
+        <ion-slide style="margin-bottom: 10%" *ngFor="let item of item.data">
+          <div style="margin-bottom: 20px">
+            <img src="{{item.img}}" alt="" style=" padding: 1%;">
+          </div>
+        </ion-slide>
+      </ion-slides>
+     </ion-item>
+
+   
+  </ion-item>
+
+
+ </ion-list>
+
+
 </ion-content>

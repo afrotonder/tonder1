@@ -23,6 +23,11 @@ const routes: Routes = [
         path: '',
         redirectTo: '/tabs/about',
         pathMatch: 'full'
+      },
+      {
+        path: '**',
+        redirectTo: '/tabs/about',
+        pathMatch: 'full'
       }
     ]
   },
