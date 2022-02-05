@@ -21,8 +21,19 @@ export class Tab2Page {
         img: '../../assets/images/APS-V.png',
         jobTitle: 'Business Intelligence Analyst',
         desc: `APS Health is a leading health data management company based in Puerto Rico, known for their many clinics and mental health services such as APS Optimind and APS MindSpa.`,
-        myPosition: 'As a BI Analyst i blah and blah:',
-        tasks: [{ nm: 'BARGE' }, { nm: 'Power BI reports' }, { nm: 'git wiki and implementation' }],
+        myPosition: 'Originally hired as a BI Analyst, my position quickly shifted to a BI Developer due to my skillset. My responsibilities include:',
+        tasks: [
+                { nm: 'BARGE:', 
+                  desc: '' }, 
+                { 
+                  nm: 'Power BI reports',
+                  desc: ''
+                 },
+                { 
+                  nm: 'git wiki and implementation',
+                  desc: ''
+                 }
+              ],
         stack: ['../../assets/images/php-icon.png', '../../assets/images/js-icon.png', '../../assets/images/powerbi.png', '../../assets/images/html-icon.png'],
         // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
         data: [{ src: 'https://corredordelyaguazo.org/', img: '../../assets/images/yaguazo.png', nm: 'El Corredor Del Yaguazo', title: '', desc: 'Official website for Corredor Del Yaguazo, a wholesale plant nursery dedicated to conserving the Natural Reserve of Ciénaga las Cucharillas.' }]
@@ -37,7 +48,10 @@ export class Tab2Page {
         jobTitle: 'Full Stack Developer',
         desc: '',
         myPosition: 'My first official job in the industry. Learned my current stack and made it mine.',
-        tasks: [{ nm: 'TuChequera.com: Styles, designs and SEO. ' }, { nm: 'TuChequera Móvil: this is my baby yo' },],
+        tasks: [
+                { nm: 'TuChequera.com:  ', desc: 'Styles, designs and SEO.' }, 
+                { nm: 'TuChequera Móvil: ', desc: 'this is my baby yo' },
+              ],
         stack: ['../../assets/images/ionic-icon.png', '../../assets/images/ts-icon.png', '../../assets/images/angular-icon.png', '../../assets/images/android.png', '../../assets/images/xcode-icon.png'],
         // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
         data: [
@@ -73,8 +87,8 @@ export class Tab2Page {
         desc: '',
         myPosition: 'At CATEC I learned how to build and deploy my first websites.',
         tasks: [
-                { nm: 'CATEC Official Site: something to say about this' }, 
-                { nm: 'FireCollect: something to say about this' }, 
+                { nm: 'CATEC Official Site:', desc: 'something to say about this' }, 
+                { nm: 'FireCollect:', desc: 'something to say about this' }, 
               ],
         stack: [
                 '../../assets/images/php-icon.png', 
@@ -109,8 +123,12 @@ export class Tab2Page {
         desc: '',
         myPosition: 'As my first work experience, using WordPress was great for my development skills. My tasks included :',
         tasks: [
-                { nm: 'Build WordPress Sites' }, 
-                { nm: 'Design and plan webites.' }, 
+                { 
+                  nm: 'Build WordPress Sites:', 
+                  desc: 'Build user friendly WordPress apps for clients using top-notch plugins and beautiful themes.' }, 
+                { 
+                  nm: 'Design Process:', 
+                  desc: 'As part of the core design team I participated in hours long design sprints to get products ready for scheduled releases.' }, 
               ],
         stack: ['../../assets/images/wordpress-icon.png'],
         // gallery: ['../../assets/images/catec1.png'],
