@@ -24,14 +24,14 @@ export class Tab2Page {
         myPosition: 'Originally hired as a BI Analyst, my position quickly shifted to a BI Developer due to my skillset. My responsibilities include:',
         tasks: [
                 { nm: 'BARGE:', 
-                  desc: '' }, 
+                  desc: 'Helped scale in-house reporting tool by replacing jQuery with ES6 modules, implementing npm as a package manager for easy updates and adding Power Bi capabilities to replace data intense reports.' }, 
                 { 
-                  nm: 'Power BI reports',
-                  desc: ''
+                  nm: 'Power BI: ',
+                  desc: 'Recreated existing reports in Power Bi to enable users access to more data dynamically and stabily, considering the constant movement of data in the health industry.'
                  },
                 { 
-                  nm: 'git wiki and implementation',
-                  desc: ''
+                  nm: 'Git/DevOps: ',
+                  desc: 'Drove initiative to replace SVN(Apache Subversion) for the modern Git version control system so company software development can follow modern coding standards.'
                  }
               ],
         stack: ['../../assets/images/php-icon.png', '../../assets/images/js-icon.png', '../../assets/images/powerbi.png', '../../assets/images/html-icon.png'],
@@ -46,13 +46,23 @@ export class Tab2Page {
         src: 'https://tuchequera.com/',
         img: '../../assets/images/tcc.jpg',
         jobTitle: 'Full Stack Developer',
-        desc: '',
-        myPosition: 'My first official job in the industry. Learned my current stack and made it mine.',
+        desc: 'TuChequera.com is a local accounting platform aimed for small & personal businesses. They have a subscription based web platform and a free companion app so all you data is accessible 24/7 from anywhere.',
+        myPosition: 'Hired as a front end developer, my time in the company eventually lead me to be the core developer of the mobile application. My full responsibilities include:',
         tasks: [
-                { nm: 'TuChequera.com:  ', desc: 'Styles, designs and SEO.' }, 
-                { nm: 'TuChequera Móvil: ', desc: 'this is my baby yo' },
+                { nm: 'TuChequera Móvil: ', desc: 'A powerful, hybrid accounting app available for Android and iOS. I am currently fully responsible for app store deployments, app development and API maintanence. ' },
+                { nm: 'TuChequera.com:  ', 
+                  desc: `As the website is more cumbersome, styling and SEO responsibilities were given to me considering my experience designing websites. 
+                         As the main web development team develops new features I fix/detail styles and run SEO tests so the site is always looking good & feeling smooth.`
+                }, 
               ],
-        stack: ['../../assets/images/ionic-icon.png', '../../assets/images/ts-icon.png', '../../assets/images/angular-icon.png', '../../assets/images/android.png', '../../assets/images/xcode-icon.png'],
+        stack: ['../../assets/images/ionic-icon.png', 
+                '../../assets/images/ts-icon.png', 
+                '../../assets/images/angular-icon.png', 
+                '../../assets/images/android.png', 
+                '../../assets/images/xcode-icon.png',
+                '../../assets/images/google-lighthouse.png'
+
+              ],
         // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
         data: [
                
@@ -87,7 +97,7 @@ export class Tab2Page {
         desc: '',
         myPosition: 'At CATEC I learned how to build and deploy my first websites.',
         tasks: [
-                { nm: 'CATEC Official Site:', desc: 'something to say about this' }, 
+                { nm: 'CATEC Site:', desc: 'something to say about this' }, 
                 { nm: 'FireCollect:', desc: 'something to say about this' }, 
               ],
         stack: [
@@ -124,7 +134,7 @@ export class Tab2Page {
         myPosition: 'As my first work experience, using WordPress was great for my development skills. My tasks included :',
         tasks: [
                 { 
-                  nm: 'Build WordPress Sites:', 
+                  nm: 'WordPress Sites:', 
                   desc: 'Build user friendly WordPress apps for clients using top-notch plugins and beautiful themes.' }, 
                 { 
                   nm: 'Design Process:', 

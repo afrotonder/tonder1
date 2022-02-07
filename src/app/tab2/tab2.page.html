@@ -26,10 +26,21 @@
         <p>{{item.desc}}</p>
         <p>{{item.myPosition}}</p>
         <ion-list>
-            <p lines="none" *ngFor="let task of item.tasks">
-            <ion-icon name="planet-outline"></ion-icon> {{task.nm}}
+          <article *ngFor="let task of item.tasks" style="display: flex; justify-content: space-evenly;">
+            <p>
+              <ion-icon color="warning" name="flash-sharp"></ion-icon> 
+              <b style="color: black">{{task.nm}}</b>
+            </p>
+            <p style="width: 75%; margin-left: 2%; text-align: justify;"> 
+              {{task.desc}}
+            </p>
+          </article>
+          
+          <!-- <p lines="none" *ngFor="let task of item.tasks">
+            <ion-icon color="warning" name="flash-sharp"></ion-icon> 
+            <b style="color: black">{{task.nm}}</b> 
             {{task.desc}}
-        </p>
+          </p> -->
         </ion-list>
       </div>
 
