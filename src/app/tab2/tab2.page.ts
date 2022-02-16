@@ -52,7 +52,8 @@ export class Tab2Page {
                 { nm: 'TuChequera Móvil: ', desc: 'A powerful, hybrid accounting app available for Android and iOS. I am currently fully responsible for app store deployments, app development and API maintanence. ' },
                 { nm: 'TuChequera.com:  ', 
                   desc: `As the website is more cumbersome, styling and SEO responsibilities were given to me considering my experience designing websites. 
-                         As the main web development team develops new features I fix/detail styles and run SEO tests so the site is always looking good & feeling smooth.`
+                         As the main web development team develops new features I fix/detail styles and run SEO tests so the site is always looking good & feeling smooth. I was also
+                         responsible for setting up the current website customer support chat powered by PureChat.`
                 }, 
               ],
         stack: ['../../assets/images/ionic-icon.png', 
@@ -162,6 +163,10 @@ export class Tab2Page {
       },
     ]
 
+  }
+
+  ionViewDidEnter() {
+    alert('Tab under construction. Some missing data. 🤓')
   }
 
 }
