@@ -46,12 +46,16 @@ document.getElementById("title").innerText = title ;
 
 
 document
+  // .getElementById("avatar")
+  // .setAttribute(
+  //   "src",
+  //   "../assets/images/avatar.jpg"
+  // );
   .getElementById("avatar")
   .setAttribute(
     "src",
-    "../assets/images/avatar.jpg"
+    "../assets/images/tonder1.jpg"
   );
-
 // TODO: change this to something better
 document.getElementById("meet").innerHTML = `
                                               <ul class="jobList">

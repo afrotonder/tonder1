@@ -41,6 +41,60 @@ export class Tab2Page {
       },
 
       {
+        name: 'Yibzer by YCS Inc.',
+        workedFrom: 'July 2018 - Present',
+        src: 'https://en.yibzer.com/',
+        img: '../../assets/images/yib.webp',
+        jobTitle: 'Frontend Developer',
+        desc: 'Food ordering app designed to schedule orders ASAP, for a date at 8pm, or for a party next week.',
+        myPosition: 'Worked as a frontend developer to quickly create a working frontend in a 3 month time period.',
+        // tasks: [
+        //         { nm: 'TuChequera Móvil: ', desc: 'A powerful, hybrid accounting app available for Android and iOS. I am currently fully responsible for app store deployments, app development and API maintanence. ' },
+        //         { nm: 'TuChequera.com:  ', 
+        //           desc: `As the website is more cumbersome, styling and SEO responsibilities were given to me considering my experience designing websites. 
+        //                  As the main web development team develops new features I fix/detail styles and run SEO tests so the site is always looking good & feeling smooth. I was also
+        //                  responsible for setting up the current website customer support chat powered by PureChat.`
+        //         }, 
+        //       ],
+        stack: ['../../assets/images/ionic-icon.png', 
+                '../../assets/images/ts-icon.png', 
+                '../../assets/images/angular-icon.png', 
+                '../../assets/images/android.png', 
+                '../../assets/images/xcode-icon.png',
+
+              ],
+        // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
+        data: [
+               
+                { src: 'https://play.google.com/store/apps/details?id=com.ycspr.yibzer', 
+                  img: '../../assets/images/yib-md.png', 
+                  nm: 'Yibzer for Android', 
+                  title: 'YibzerForAndroid', 
+                  desc: 'Food ordering app.' 
+                },
+                { src: 'https://play.google.com/store/apps/details?id=com.ycspr.yibzer', 
+                img: '../../assets/images/yib-md2.png', 
+                nm: 'Yibzer for Android', 
+                title: 'YibzerForAndroid', 
+                desc: 'Food ordering app.' 
+              },
+                { src: 'https://apps.apple.com/us/app/yibzer/id1401432968?ign-mpt=uo%3D4', 
+                  img: '../../assets/images/yib-iOS.png', 
+                  nm: 'Yibzer for iOS', 
+                  title: 'YibzerForiOS', 
+                  desc: 'Food ordering app.' 
+                },
+              //   { src: 'https://play.google.com/store/apps/details?id=com.ycspr.yibzer', 
+              //   img: '../../assets/images/yib-md.png', 
+              //   nm: 'Yibzer', 
+              //   title: 'Yibzer', 
+              //   desc: 'Food ordering app.' 
+              // },
+              ]
+
+      },
+
+      {
         name: 'TuChequera.com',
         workedFrom: 'July 2018 - Present',
         src: 'https://tuchequera.com/',
