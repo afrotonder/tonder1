@@ -28,6 +28,7 @@ const title = "Software Developer"
 const slogan = "Full-time problem solver";
 const job1 = "TuChequera.com";
 const job2 = "APS Health";
+// const job3 = "Free" ;
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyA1Bi9Dd9pSPyqeolk7AJhQAQD1tEvTGaA",
@@ -65,6 +66,7 @@ document.getElementById("meet").innerHTML = `
                                                 <li> <b style="color: white;"> > </b> Business Intelligence Analyst
                                                   @<a href="https://apshealth.com/" taget="_blank">${job2}</a>
                                                 </li>
+                                                <li> <b style="color: white;"> > </b> Freelance Web3 Developer                                                </li>
                                               </ul>`
 
                                                ;

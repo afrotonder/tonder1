@@ -56,7 +56,8 @@ export class Tab1Page {
       { name: "CSS/SCSS", icon: "logo-css3" },
       { name: "Angular", icon: "logo-angular" },
       { name: "Ionic", icon: "logo-ionic" },
-      { name: "Capacitor", icon: "logo-capacitor" },
+      { name: "Capacitor", icon: "logo-capacitor" }
+
     ];
 
 
@@ -64,6 +65,12 @@ export class Tab1Page {
       { name: "iOS", icon: "logo-apple-appstore", desc: '' },
       { name: "Android", icon: "logo-android" },
       { name: "Linux", icon: "logo-tux" },
+      { name: "Moralis Web3 SDK", icon: "construct-outline" },
+      { name: "Factoria.app", icon: "chevron-up-outline" },
+      { name: "Firebase", icon: "logo-firebase" },
+      { name: "GIMP", icon: "image-outline" },
+
+      
     ];
 
     this.filmList = [

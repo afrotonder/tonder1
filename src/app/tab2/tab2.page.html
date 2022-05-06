@@ -29,7 +29,7 @@
           <article *ngFor="let task of item.tasks" style="display: flex; justify-content: space-evenly;">
             <p>
               <ion-icon color="warning" name="flash-sharp"></ion-icon> 
-              <b style="color: black">{{task.nm}}</b>
+              <b class="task">{{task.nm}}</b>
             </p>
             <p style="width: 75%; margin-left: 2%; text-align: justify;"> 
               {{task.desc}}
@@ -58,9 +58,13 @@
 
       <ion-slides style=" margin: auto;" pager [options]="{ slidesPerView: true, loop: false }">
         <ion-slide style="margin-bottom: 10%" *ngFor="let item of item.data">
-          <div style="margin-bottom: 20px">
-            <img src="{{item.img}}" alt="" style=" padding: 1%;">
-          </div>
+
+          <a href="{{item.src}}" target="_blank">
+            <div style="margin-bottom: 20px">
+              <img src="{{item.img}}" alt="" style=" padding: 1%;">
+            </div>
+          </a>
+         
         </ion-slide>
       </ion-slides>
      </ion-item>

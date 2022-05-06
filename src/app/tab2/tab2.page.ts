@@ -15,6 +15,95 @@ export class Tab2Page {
 
     this.portfolioItems = [
       {
+        name: 'Freelance Web3 Development',
+        workedFrom: 'November 2021 - Present',
+        src: '',
+        img: '../../assets/images/2286.png',
+        jobTitle: 'Web3 Developer',
+        desc: `The metaverse is a beautiful place full of NFTs & riches, but to reach it one must spawn a portal to it: Web3.`,
+        myPosition: `I specialize in building NFT projects from scratch, web3 integration for minting, rarity websites, generative art, etc.
+                     I also specialize in creating simple contracts using contract generating tools such as Factoria.app & thirdweb.com.`,
+        tasks: [
+          { 
+            nm: 'WAGMIBALLZ NFT',
+            desc: `Website for the WAGMIBALLZ NFT collection.`
+           },
+           { 
+            nm: 'Paddlez Web3 Game',
+            desc: `Simple utility game only available to WAGMIBALLZ NFT holders.`
+           },
+                { nm: 'PunkForce Rarity Site:', 
+                  desc: `Rarity website for the CC0 NFT collection PunkForce.` 
+                }, 
+                { 
+                  nm: '3Mfer Rarity Site',
+                  desc: `Rarity website for Mfers derivative collection 3Mfers by SkullCat.`
+                 },
+                { 
+                  nm: 'OTW Addres Exporter',
+                  desc: `Simple web3 tool that permits users to search ethereum & polygon NFTs from each blockchain and export an excel file with all unique addresses.`
+                 },
+                 { 
+                  nm: 'The Minnies NFT Site',
+                  desc: `Website for The Minnies NFT collection.`
+                 }
+              ],
+              stack: [
+                '../../assets/images/moralis.png',
+                '../../assets/images/ionic-icon.png', 
+              '../../assets/images/ts-icon.png', 
+              '../../assets/images/angular-icon.png', 
+              '../../assets/images/firebase.png', 
+              // '../../assets/images/android.png', 
+              // '../../assets/images/xcode-icon.png',
+              
+
+            ],        // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
+        data: [{  src: 'https://punkforce-rarity.web.app/home', 
+                  img: '../../assets/images/punkforce.png', 
+                  nm: 'PunkForce Rarity Site:', 
+                  title: 'PunkForceRarity', 
+                  desc: 'Rarity site for the PunkForce NFT Collection' 
+                },
+                {  
+                  src: 'https://3mfer-rarity.xyz/home',  
+                  img: '../../assets/images/mfers.png', 
+                  nm: '3Mfers NFT Official', 
+                  title: '3MfersNFTWebsite', 
+                  desc: 'Rarity site for the 3Mfers NFT collection.' 
+                },
+                {  
+                  src: '',  
+                  img: '../../assets/images/otw.png', 
+                  nm: 'OTW Addres Exporter', 
+                  title: 'OTWAddressExportTool', 
+                  desc: 'NFT address export tool.' 
+                },
+                {  
+                  src: 'https://minniesnft.web.app/home',  
+                  img: '../../assets/images/minnies.png', 
+                  nm: 'The Minnies NFT Official', 
+                  title: 'TheMinniesNFT', 
+                  desc: 'Official webiste for The Minnies NFT collection. ' 
+                },
+                {  
+                  src: 'https://paddlez-1b260.web.app/',  
+                  img: '../../assets/images/paddlez.png', 
+                  nm: 'The Minnies NFT Official', 
+                  title: 'TheMinniesNFT', 
+                  desc: 'Official webiste for The Minnies NFT collection. ' 
+                },
+                {  
+                  src: 'https://wagmiballznft.web.app/home',  
+                  img: '../../assets/images/wagmi.png', 
+                  nm: 'The Minnies NFT Official', 
+                  title: 'TheMinniesNFT', 
+                  desc: 'Official webiste for The Minnies NFT collection. ' 
+                },
+                
+                ]
+      },
+      {
         name: 'APS Health',
         workedFrom: 'August 2020 - Present',
         src: 'https://apshealth.com/',
@@ -36,8 +125,23 @@ export class Tab2Page {
               ],
         stack: ['../../assets/images/php-icon.png', '../../assets/images/js-icon.png', '../../assets/images/powerbi.png', '../../assets/images/html-icon.png'],
         // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
-        data: [{ src: 'https://corredordelyaguazo.org/', img: '../../assets/images/yaguazo.png', nm: 'El Corredor Del Yaguazo', title: '', desc: 'Official website for Corredor Del Yaguazo, a wholesale plant nursery dedicated to conserving the Natural Reserve of Ciénaga las Cucharillas.' }]
+        data: [{  src: 'https://apshealth.com', 
+                  img: '../../assets/images/brg1.png', 
+                  nm: 'BARGE Reporting App', 
+                  title: '', 
+                  desc: 'Official website for APS Health.' 
+                },
+                {  
+                  src: 'https://apshealth.com',  
+                  img: '../../assets/images/brg2.png', 
+                  nm: 'BARGE Reporting App', 
+                  title: '', 
+                  desc: 'Official website for APS Health.' 
+                },
+                
 
+                
+                ]
       },
 
       {
@@ -220,7 +324,7 @@ export class Tab2Page {
   }
 
   ionViewDidEnter() {
-    alert('Tab under construction. Some missing data. 🤓')
+    // alert('Tab under construction. Some missing data. 🤓')
   }
 
 }
