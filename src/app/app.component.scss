@@ -1,5 +1,31 @@
 @use '../assets/afrotonder.scss' ;
 
+.pfpContainer {
+  width: 100%; height: 100%;
+  margin: 20px auto 40px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.hexPFP {
+  width: 200px;
+  display: inline-block;
+
+  filter: url('#goo');
+}
+
+.hexPFP::before {
+  content: "";
+  display: block;
+  /* background:currentColor; */
+  background: url('../assets/images/tonder1.jpg');
+  background-position: center;
+  background-size: 100%;
+  padding-top: 86.6%; /* 100%*cos(30) */
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  /* https://stackoverflow.com/questions/24819717/how-to-make-a-curved-edge-hexagon-by-using-css/65504158#65504158 */
+}
+
 :root {
 
   --ion-background-color: none !important;

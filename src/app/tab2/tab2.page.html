@@ -27,7 +27,7 @@
         <p>{{item.myPosition}}</p>
         <ion-list>
           <article *ngFor="let task of item.tasks" style="display: flex; justify-content: space-evenly;">
-            <p>
+            <p class="taskName">
               <ion-icon color="warning" name="flash-sharp"></ion-icon> 
               <b class="task">{{task.nm}}</b>
             </p>

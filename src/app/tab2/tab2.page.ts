@@ -25,6 +25,10 @@ export class Tab2Page {
                      I also specialize in creating simple contracts using contract generating tools such as Factoria.app & thirdweb.com.`,
         tasks: [
           { 
+            nm: 'CryptoBangersNFT Unlockables',
+            desc: `Unlockable content site for the CryptoBangersNFT collection.`
+           },
+          { 
             nm: 'WAGMIBALLZ NFT',
             desc: `Website for the WAGMIBALLZ NFT collection.`
            },
@@ -32,34 +36,57 @@ export class Tab2Page {
             nm: 'Paddlez Web3 Game',
             desc: `Simple utility game only available to WAGMIBALLZ NFT holders.`
            },
-                { nm: 'PunkForce Rarity Site:', 
-                  desc: `Rarity website for the CC0 NFT collection PunkForce.` 
-                }, 
-                { 
-                  nm: '3Mfer Rarity Site',
-                  desc: `Rarity website for Mfers derivative collection 3Mfers by SkullCat.`
-                 },
-                { 
-                  nm: 'OTW Addres Exporter',
-                  desc: `Simple web3 tool that permits users to search ethereum & polygon NFTs from each blockchain and export an excel file with all unique addresses.`
-                 },
-                 { 
-                  nm: 'The Minnies NFT Site',
-                  desc: `Website for The Minnies NFT collection.`
-                 }
-              ],
-              stack: [
-                '../../assets/images/moralis.png',
-                '../../assets/images/ionic-icon.png', 
-              '../../assets/images/ts-icon.png', 
-              '../../assets/images/angular-icon.png', 
-              '../../assets/images/firebase.png', 
-              // '../../assets/images/android.png', 
-              // '../../assets/images/xcode-icon.png',
-              
+            { nm: 'PunkForce Rarity Site:', 
+              desc: `Rarity website for the CC0 NFT collection PunkForce.` 
+            }, 
+            { 
+              nm: '3Mfer Rarity Site',
+              desc: `Rarity website for Mfers derivative collection 3Mfers by SkullCat.`
+              },
+            { 
+              nm: 'OTW Addres Exporter',
+              desc: `Simple web3 tool that permits users to search ethereum & polygon NFTs from each blockchain and export an excel file with all unique addresses.`
+              },
+              { 
+              nm: 'The Minnies NFT Site',
+              desc: `Website for The Minnies NFT collection.`
+              }
+          ],
+            stack: [
+              '../../assets/images/moralis.png',
+              '../../assets/images/ionic-icon.png', 
+            '../../assets/images/ts-icon.png', 
+            '../../assets/images/angular-icon.png', 
+            '../../assets/images/firebase.png', 
+            // '../../assets/images/android.png', 
+            // '../../assets/images/xcode-icon.png',
+            
 
-            ],        // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
-        data: [{  src: 'https://punkforce-rarity.web.app/home', 
+          ],        // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
+        data: [
+          {  
+            src: 'https://cryptobangers-unlockables.web.app/home',  
+            img: '../../assets/images/cbu.png', 
+            nm: 'CryptoBangersNFT Unlockables Page', 
+            title: 'CryptoBangersNFTUnlockables', 
+            desc: `Official NFT gated website for the CryptoBangersNFT Collections' unlockable content.` 
+          },
+          {  
+            src: 'https://wagmiballznft.web.app/home',  
+            img: '../../assets/images/wagmi.png', 
+            nm: 'The Minnies NFT Official', 
+            title: 'TheMinniesNFT', 
+            desc: 'Official webiste for The Minnies NFT collection. ' 
+          },
+
+          {  
+            src: 'https://paddlez-1b260.web.app/',  
+            img: '../../assets/images/paddlez.png', 
+            nm: 'The Minnies NFT Official', 
+            title: 'TheMinniesNFT', 
+            desc: 'Official webiste for The Minnies NFT collection. ' 
+          },
+          {  src: 'https://punkforce-rarity.web.app/home', 
                   img: '../../assets/images/punkforce.png', 
                   nm: 'PunkForce Rarity Site:', 
                   title: 'PunkForceRarity', 
@@ -73,13 +100,6 @@ export class Tab2Page {
                   desc: 'Rarity site for the 3Mfers NFT collection.' 
                 },
                 {  
-                  src: '',  
-                  img: '../../assets/images/otw.png', 
-                  nm: 'OTW Addres Exporter', 
-                  title: 'OTWAddressExportTool', 
-                  desc: 'NFT address export tool.' 
-                },
-                {  
                   src: 'https://minniesnft.web.app/home',  
                   img: '../../assets/images/minnies.png', 
                   nm: 'The Minnies NFT Official', 
@@ -87,19 +107,15 @@ export class Tab2Page {
                   desc: 'Official webiste for The Minnies NFT collection. ' 
                 },
                 {  
-                  src: 'https://paddlez-1b260.web.app/',  
-                  img: '../../assets/images/paddlez.png', 
-                  nm: 'The Minnies NFT Official', 
-                  title: 'TheMinniesNFT', 
-                  desc: 'Official webiste for The Minnies NFT collection. ' 
+                  src: '',  
+                  img: '../../assets/images/otw.png', 
+                  nm: 'OTW Addres Exporter', 
+                  title: 'OTWAddressExportTool', 
+                  desc: 'NFT address export tool.' 
                 },
-                {  
-                  src: 'https://wagmiballznft.web.app/home',  
-                  img: '../../assets/images/wagmi.png', 
-                  nm: 'The Minnies NFT Official', 
-                  title: 'TheMinniesNFT', 
-                  desc: 'Official webiste for The Minnies NFT collection. ' 
-                },
+           
+            
+            
                 
                 ]
       },

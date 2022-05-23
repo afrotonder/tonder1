@@ -46,17 +46,17 @@ document.getElementById("uname").innerText = uname ;
 document.getElementById("title").innerText = title ;
 
 
-document
+// document
   // .getElementById("avatar")
   // .setAttribute(
   //   "src",
   //   "../assets/images/avatar.jpg"
   // );
-  .getElementById("avatar")
-  .setAttribute(
-    "src",
-    "../assets/images/tonder1.jpg"
-  );
+  // .getElementById("avatar")
+  // .setAttribute(
+  //   "src",
+  //   "../assets/images/tonder1.jpg"
+  // );
 // TODO: change this to something better
 document.getElementById("meet").innerHTML = `
                                               <ul class="jobList">
@@ -96,6 +96,13 @@ let imgs = [
     source: "https://github.githubassets.com/images/modules/logos_page/Octocat.png"
   },
   {
+    name: "linktree",
+    url: "https://linktr.ee/afrotonder",
+    title: "afrotonder@LinkTree",
+    alt: "LinkTree Icon",
+    source: "../assets/images/linktree.png" 
+  },
+  {
     name: "gmail",
     url: "mailto:o.rosado18@gmail.com",
     title: "o.rosado18@gmail.com",
@@ -122,7 +129,8 @@ let imgs = [
     title: "afrotonder@Twitter",
     alt: "Twitter Icon",
     source: "https://icons-for-free.com/iconfiles/png/512/identity+logo+new+twitter+icon-1320161424699291885.png"
-  }
+  },
+  
 ];
 
 

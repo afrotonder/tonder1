@@ -2,9 +2,14 @@
   <div class="mainSide">
 
       <main id="body">
-        <ion-thumbnail style="display: inline-table; margin: auto; width: 100%;">
+        <!-- <ion-thumbnail style="display: inline-table; margin: auto; width: 100%;">
           <ion-img id="avatar"></ion-img>
-        </ion-thumbnail>
+        </ion-thumbnail> -->
+
+        <div id="main" class="pfpContainer">
+          <div  class="hexPFP"></div>
+        </div>
+  
         <div id="main" style="display: inline-block; width: 100%; height: 100%;">
         
             <div style=" text-align: center; flex-direction: column;">
@@ -60,4 +65,14 @@
 
   </div>
   <ion-router-outlet></ion-router-outlet>
+
+
+  <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+          <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />    
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+              <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+          </filter>
+      </defs>
+  </svg>
 </ion-app>
