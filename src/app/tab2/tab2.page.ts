@@ -25,7 +25,11 @@ export class Tab2Page {
                      I also specialize in creating simple contracts using contract generating tools such as Factoria.app & thirdweb.com.`,
         tasks: [
           { 
-            nm: 'CryptoBangersNFT Unlockables',
+            nm: 'CyberJibaNFT Dapp',
+            desc: `Token gated website for the CyberJibaNFT community.`
+           },
+              { 
+            nm: 'CryptoBangersNFT Unlockables Dapp',
             desc: `Unlockable content site for the CryptoBangersNFT collection.`
            },
           { 
@@ -65,9 +69,16 @@ export class Tab2Page {
           ],        // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
         data: [
           {  
+            src: 'https://cyberjiba.io',  
+            img: '../../assets/images/cyberjiba.png', 
+            nm: 'CyberJiba Official Dapp', 
+            title: 'CyberJibaOfficial', 
+            desc: `Official NFT gated website for the CyberJiba community.` 
+          },
+          {  
             src: 'https://cryptobangers-unlockables.web.app/home',  
-            img: '../../assets/images/cbu.png', 
-            nm: 'CryptoBangersNFT Unlockables Page', 
+            img: '../../assets/images/cbu1.png', 
+            nm: 'CryptoBangers Unlockables Dapp', 
             title: 'CryptoBangersNFTUnlockables', 
             desc: `Official NFT gated website for the CryptoBangersNFT Collections' unlockable content.` 
           },
@@ -101,7 +112,7 @@ export class Tab2Page {
                 },
                 {  
                   src: 'https://minniesnft.web.app/home',  
-                  img: '../../assets/images/minnies.png', 
+                  img: '../../assets/images/minnies1.png', 
                   nm: 'The Minnies NFT Official', 
                   title: 'TheMinniesNFT', 
                   desc: 'Official webiste for The Minnies NFT collection. ' 

@@ -82,20 +82,20 @@ export class Tab1Page {
     ];
 
     this.artList = [
-      { src: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/89115994634030338325585499613716342618534582736938746437257675386745633374209",
+      { src: "https://opensea.io/collection/karmakameleons",
         icon: "",
-        title: 'Charlie #58',
-        url: 'https://lh3.googleusercontent.com/rvrXEEwSNTl2DM9ny6Xu4yPDa_vv5ZjFyVKB3fl7L4c-EJPvAX8NSXuMgugOwKwsW3JfuAFkWxe9KvYLd2r9QPbb5cboIdiHq9VSwQ=s0'
+        title: 'Karma Kameleons Genesis',
+        url: '../../assets/images/karma.gif'
       },
-      { src: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/89115994634030338325585499613716342618534582736938746437257675427427563601921",
+      { src: "https://wagmiballznft.web.app/",
         icon: "",
-        title: 'Charlie #95',
-        url: 'https://lh3.googleusercontent.com/LQX1m_MUAxx-oLCeW5g9KyzK6omRCzwaytdMMas7bn6e2387aZ-AX_mXHCvzUmgrZGx37F71LGz325WhejfRG3zDyiKCv_Zsy2v5=s0',
+        title: 'WagmiballzNFT',
+        url: '../../assets/images/wagmiballz.gif',
       },
-      { src: "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/89115994634030338325585499613716342618534582736938746437257675397740749651969",
+      { src: "https://cyberjiba.io",
         icon: "",
-        title: 'Charlie #68',
-        url: 'https://lh3.googleusercontent.com/C2INFCaJ6zjvvOEeKvSEGnBtCVT2e57RRSij3IEaUHkqmsXhezgZCybInJ0RII7OVgUWHqJMTFlWatDTidE-7K7ODCGRL9dXgh0h=s0'
+        title: 'CyberJibaNFT CyberPava Graffiti',
+        url: '../../assets/images/cyberpava.jpg'
       },
     ];
 
