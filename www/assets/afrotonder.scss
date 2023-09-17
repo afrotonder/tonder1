@@ -24,7 +24,7 @@ header {
   // color: red !important;
   color: $mainColor;
   font-size: 18px !important;
-  margin-top: 16%;
+  // margin-top: 16%;
   font-weight: lighter;
 }
 
@@ -186,7 +186,7 @@ ul {
 .footer-text-container {
   display: flex;
   justify-content: center;
-  margin-top: 27%;
+  // margin-top: 27%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -351,7 +351,7 @@ ul {
 
 .footer {
   bottom: 0;
-  // position: fixed;
+  position: absolute;
   margin-left: auto;
   margin-right: auto;
   width: 100%;

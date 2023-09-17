@@ -71,65 +71,42 @@
       <!-- <ion-title size="large"></ion-title> -->
       <h1>HOBBIES, INTERESTS & OTHERS</h1>
     </ion-item>
-    <ion-item lines="none">
-      <p>
-        Coding aside, I enjoy horror movies, collecting, drawing, tech and playing
-        video games. Here's a few of my favs:
+    <div class="hobbiesComponent" >
+     
+      <ion-item lines="none">
+        <p>
+          Coding aside, I enjoy horror movies, jumping rope, collecting, tinkering and playing
+          video games. Check out some of my interests:
+        </p>
+      </ion-item>
 
-        <br />
-        <br />
-        <ion-title>Favorite films</ion-title>
-        <!-- TODO: IMPLEMENT SWIPER SO WE CAN ADD MORE MOVIES AND MISC STUFF HORIZONTALLY -->
-        <ion-list
-          style="
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-          "
-        >
-          <ion-card
-            class="miscCard"
-            style="width: 55%"
-            *ngFor="let misc of filmList"
-          >
-            <ion-card-content style="display: flex; justify-content: center">
-              <img class="miscCardImg" src="{{misc.url}}" alt="" />
-            </ion-card-content>
-            <ion-card-header style="text-align: center">
-              <ion-card-subtitle>{{misc.title}}</ion-card-subtitle>
-            </ion-card-header>
-          </ion-card>
-        </ion-list>
+      <ion-list
+      style="
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+      "
+    >
+      <ion-card
+        class="miscCard"
+        style="width: 550px;    display: flex;
+        flex-direction: column;"
+        *ngFor="let hobbie of myHobbiesList"
+      >
+      <ion-card-title style="    margin: 10% auto;">{{hobbie.title}}</ion-card-title>
 
-        <br />
-        <br />
-        <ion-title>My Art</ion-title>
-        <!-- TODO: IMPLEMENT SWIPER SO WE CAN ADD MORE MOVIES AND MISC STUFF HORIZONTALLY -->
-        <ion-list
-          style="
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-          "
-        >
-          <ion-card
-            class="miscCard"
-            style="width: 55%"
-            *ngFor="let misc of artList"
-          >
-            <ion-card-content style="display: flex; justify-content: center">
-              <img class="artCardImg" src="{{misc.url}}" alt="" />
-            </ion-card-content>
-            <ion-card-header style="text-align: center">
-              <ion-card-subtitle>{{misc.title}}</ion-card-subtitle>
-            </ion-card-header>
-          </ion-card>
-        </ion-list>
+        <ion-card-content style="display: flex; justify-content: center; padding: 0;">
+          <img *ngIf="hobbie.isImage" class="hobbieImage"  src="{{hobbie.url}}" alt="" />
 
+          <iframe *ngIf="!hobbie.isImage" [src]="hobbie.url | safe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </ion-card-content>
+        <ion-card-content style="    text-align: center;">
+          <ion-card-subtitle>{{hobbie.description}}</ion-card-subtitle>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
 
-
-      </p>
-    </ion-item>
+    </div>
     <!-- END MISC  -->
   </ion-content>
 <!-- </ion-header> -->

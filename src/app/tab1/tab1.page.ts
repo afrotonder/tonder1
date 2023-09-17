@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Pipe, PipeTransform} from '@angular/core';
 // import SwiperCore, { Autoplay, Keyboard, Pagination, Scrollbar, Zoom } from 'swiper';
 // SwiperCore.use([Autoplay, Keyboard, Pagination, Scrollbar, Zoom]);
 
@@ -19,12 +19,44 @@ export class Tab1Page {
   filmList: Array<any>;
   artList: Array<any>;
 
+  myHobbiesList: Array<any>;
+
   constructor() {
 
     this.stackParagraph = ``
 
     this.otherParagraph = ``
 
+    this.myHobbiesList = [
+      { 
+        name: "", 
+        icon: "", 
+        title: 'Favorite movies', 
+        description: "Heres a list of movies I've watched over 6 times each.", 
+        url: '../../assets/images/movies.png',
+        isImage: true,
+        isVideo: false
+       },
+       { 
+        name: "", 
+        icon: "", 
+        title: 'Jumping Rope', 
+        description: "Jumping rope keeps me disciplined, energized & mega pumped.", 
+        url: 'https://youtube.com/embed/opPiQW70hXM?feature=share',
+        isImage: false,
+        isVideo: true
+       },
+       { 
+        name: "", 
+        icon: "", 
+        title: 'Video Games', 
+        description: "Throughout the years I discovered I loved finding and documenting glitches in videos games. Here's an example!", 
+        url: 'https://www.youtube.com/embed/kg_zZMPwOb0?si=aqOtfJIjnU1szyrl',
+        isImage: false,
+        isVideo: false
+
+       },
+    ]
 
     this.skillList = [{ 'name': 'User focused UX/UI Design', 'icon': 'prism-outline' },
     { 'name': 'Hybrid Mobile App Development', 'icon': 'phone-portrait-outline' },
@@ -34,21 +66,6 @@ export class Tab1Page {
     { 'name': 'Data Analysis via Reports', 'icon': 'analytics-outline' },
     { 'name': 'UX/UI Design', 'icon': 'pizza-outline' },
     ]
-
-
-
-    // this.toolList = [
-    //   { name: "JS (ES6+)", source: "../assets/images/js-icon.png"},
-    //   { name: "HTML", source: "../assets/images/html-icon.png"},
-    //   { name: "CSS/SCSS", source: "../assets/images/css-icon.png" },
-    //   { name: "Angular", source: "../assets/images/angular-icon.png" },
-    //   // { name: "Ionic", source: "../assets/images/ionic.jpg" },
-    //   // { name: "iOS", source: xcode_icon },
-    //   { name: "Ionic", source: "https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ionic-512.png" },
-    //   // { name: "Android", source: android_icon },
-    //   // { name: "Capacitor", source: "./images/capacitor-icon.png" },
-    //   { name: "Capacitor", source: "https://seeklogo.com/images/C/capacitor-logo-DF3634DD70-seeklogo.com.png" },
-    // ];
 
     this.toolList = [
       { name: "JS (ES6+)", icon: "logo-javascript", desc: '' },
@@ -60,12 +77,11 @@ export class Tab1Page {
 
     ];
 
-
     this.otherTools = [
       { name: "iOS", icon: "logo-apple-appstore", desc: '' },
       { name: "Android", icon: "logo-android" },
       { name: "Linux", icon: "logo-tux" },
-      { name: "Moralis Web3 SDK", icon: "construct-outline" },
+      { name: "ThirdWeb SDK", icon: "construct-outline" },
       { name: "Factoria.app", icon: "chevron-up-outline" },
       { name: "Firebase", icon: "logo-firebase" },
       { name: "GIMP", icon: "image-outline" },

@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 import { SwiperModule } from 'swiper/angular';
+import { SafePipe } from '../safe.pipe';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 
@@ -17,7 +18,7 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
     Tab1PageRoutingModule,
     SwiperModule
   ],
-  declarations: [Tab1Page],
+  declarations: [Tab1Page, SafePipe],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class Tab1PageModule {}

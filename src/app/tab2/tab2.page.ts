@@ -25,12 +25,12 @@ export class Tab2Page {
                      I also specialize in creating simple contracts using contract generating tools such as Factoria.app & thirdweb.com.`,
         tasks: [
           { 
+            nm: 'CryptoBangers Music NFT Platform',
+            desc: `Unlockable content site for the CryptoBangersNFT collection.`
+           },
+          { 
             nm: 'CyberJibaNFT Dapp',
             desc: `Token gated website for the CyberJibaNFT community.`
-           },
-              { 
-            nm: 'CryptoBangersNFT Unlockables Dapp',
-            desc: `Unlockable content site for the CryptoBangersNFT collection.`
            },
           { 
             nm: 'WAGMIBALLZ NFT',
@@ -69,19 +69,20 @@ export class Tab2Page {
           ],        // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
         data: [
           {  
+            src: 'https://cryptobangers.io/home',  
+            img: '../../assets/images/cbu1.png', 
+            nm: 'CryptoBangers Music NFT Platform', 
+            title: 'CryptoBangers.io', 
+            desc: `Official NFT gated website for the CryptoBangersNFT Collections' unlockable content.` 
+          },
+          {  
             src: 'https://cyberjiba.io',  
             img: '../../assets/images/cyberjiba.png', 
             nm: 'CyberJiba Official Dapp', 
             title: 'CyberJibaOfficial', 
             desc: `Official NFT gated website for the CyberJiba community.` 
           },
-          {  
-            src: 'https://cryptobangers-unlockables.web.app/home',  
-            img: '../../assets/images/cbu1.png', 
-            nm: 'CryptoBangers Unlockables Dapp', 
-            title: 'CryptoBangersNFTUnlockables', 
-            desc: `Official NFT gated website for the CryptoBangersNFT Collections' unlockable content.` 
-          },
+          
           {  
             src: 'https://wagmiballznft.web.app/home',  
             img: '../../assets/images/wagmi.png', 

@@ -1,5 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { initializeApp } from "firebase/app";
+import { environment } from 'src/environments/environment.prod';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -8,23 +9,40 @@ import { initializeApp } from "firebase/app";
 
 })
 export class AppComponent {
+
+  uname: string;
+  lastNames: string;
+   sm_uname: string;
+   handle: string;
+   title: string;
+   slogan: string;
+   job1: string;
+   job2: string;
+   footer: string;
+
   constructor() {
 
-
+    this.uname = "Omar";
+    this.lastNames = "Rosado Ramírez"
+    this.sm_uname = "O. Rosado Ramírez";
+    this.handle = "'afrotonder'";
+    this.title = "Full Stack Developer ⚡ Mobile Developer"
+    this.slogan = "Full-time problem solver";
+    this.job1 = "TuChequera.com";
+    this.job2 = "APS Health";
+    this.footer = `afrotonder © ${new Date().getFullYear().toString()}`;
+    ;
 
   }
 
   ngAfterViewInit()	{
     this.init()
-
   }
 
   init() {
     // ---------- SET AVATAR DATA ----------
-const uname = "Omar Rosado Ramírez";
 const sm_uname = "O. Rosado Ramírez";
 const handle = "afrotonder";
-const title = "Software Developer"
 const slogan = "Full-time problem solver";
 const job1 = "TuChequera.com";
 const job2 = "APS Health";
@@ -36,41 +54,12 @@ const firebaseConfig = {
   projectId: "tonder1-bd704",
   storageBucket: "tonder1-bd704.appspot.com",
   messagingSenderId: "346941604927",
-  appId: "1:346941604927:web:420ecd13afe955cb3d248a"
+  appId: environment.kawaki
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-document.getElementById("uname").innerText = uname ;
 
-document.getElementById("title").innerText = title ;
-
-
-// document
-  // .getElementById("avatar")
-  // .setAttribute(
-  //   "src",
-  //   "../assets/images/avatar.jpg"
-  // );
-  // .getElementById("avatar")
-  // .setAttribute(
-  //   "src",
-  //   "../assets/images/tonder1.jpg"
-  // );
-// TODO: change this to something better
-document.getElementById("meet").innerHTML = `
-                                              <ul class="jobList">
-                                                <li> <b style="color: white;"> > </b> Full Stack Developer
-                                                  @<a class='job' href="https://tuchequera.com" target="_blank">${job1}</a>
-                                                </li>
-                                                <li> <b style="color: white;"> > </b> Business Intelligence Analyst
-                                                  @<a href="https://apshealth.com/" taget="_blank">${job2}</a>
-                                                </li>
-                                                <li> <b style="color: white;"> > </b> Freelance Web3 Developer                                                </li>
-                                              </ul>`
-
-                                               ;
-// ---------- END SET AVATAR DATA ----------
 
 // ---------- ICON DATA----------
 let imgs = [
@@ -123,13 +112,13 @@ let imgs = [
   //   alt: "OpenSea Icon",
   //   source: "https://opensea.io/static/images/logos/opensea.svg"
   // },
-  {
-    name: "twt",
-    url: "https://twitter.com/afrotonder",
-    title: "afrotonder@Twitter",
-    alt: "Twitter Icon",
-    source: "https://icons-for-free.com/iconfiles/png/512/identity+logo+new+twitter+icon-1320161424699291885.png"
-  },
+  // {
+  //   name: "twt",
+  //   url: "https://twitter.com/afrotonder",
+  //   title: "afrotonder@Twitter",
+  //   alt: "Twitter Icon",
+  //   source: "https://icons-for-free.com/iconfiles/png/512/identity+logo+new+twitter+icon-1320161424699291885.png"
+  // },
   
 ];
 
@@ -155,17 +144,6 @@ for (let img of imgs) {
 
   document.getElementById("social-icons").appendChild(elem);
 }
-
-
-
-
-// --------------- set footer data --------------- //
-const footer = "afrotonder © ";
-let year = new Date().getFullYear();
-
-document.getElementsByClassName("footer-text")[0].innerHTML =
-  footer + year.toString();
-// --------------- set footer data --------------- //
 
   }
 }

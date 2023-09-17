@@ -1,50 +1,38 @@
 <ion-app >
   <div class="mainSide">
 
-      <main id="body">
-        <!-- <ion-thumbnail style="display: inline-table; margin: auto; width: 100%;">
-          <ion-img id="avatar"></ion-img>
-        </ion-thumbnail> -->
-
-        <div id="main" class="pfpContainer">
-          <div  class="hexPFP"></div>
+      <main id="body" style="height: 100%;">
+ 
+        <div class="pfpContainer">
+          <img class="pfp" src="../assets/images/tonderpfp.png" alt="">
         </div>
-  
-        <div id="main" style="display: inline-block; width: 100%; height: 100%;">
-        
-            <div style=" text-align: center; flex-direction: column;">
-              
-              <!-- <img id="avatar" /> -->
-            
-              <!-- <div lines="none"> -->
-              
-              <!-- </div> -->
-              <p id="uname"> </p>
+          
+        <div class="titleContainer">
+          
+          <h2 class="titleTextMargin"> {{uname}} </h2>
+          <h3 class="titleText titleTextMargin"> {{handle}} </h3>
+          <h2 class="titleTextMargin"> {{lastNames}} </h2>
 
-              <p id="title"> </p>
+          <p class="titleText"> {{title}} </p>
 
-            </div>
+        </div>
          
-        </div>
 
-        <article id="description">
-
-
-
-          <br/>
-
+        <article class="descriptionContainer">
 
           <p class="workContainer">Currently working as a:</p>
 
-          <div id="meet"> </div>
-
-          <br/>
-
-
-          <!-- <p id="feats" > ⚡ My main stack </p> -->
-
-          <div class="tools-container">
-              <!-- <section id="tools"></section> -->
+          <div>
+            
+            <ul class="jobList">
+              <li> <b style="color: white;"> > </b> Full Stack Developer
+                @<a class='job' href="https://tuchequera.com" target="_blank">{{job1}}</a>
+              </li>
+              <li> <b style="color: white;"> > </b> Business Intelligence Analyst
+                @<a href="https://apshealth.com/" taget="_blank">{{job2}}</a>
+              </li>
+              <li> <b style="color: white;"> > </b> Freelance Web3 Developer                                                </li>
+            </ul>
           </div>
 
         </article>
@@ -58,7 +46,7 @@
         </div>
 
         <div class="footer-text-container">
-          <p class="footer-text" ></p>
+          <p class="footer-text" >{{footer}}</p>
         </div>
         </div>
       </main>
@@ -66,13 +54,4 @@
   </div>
   <ion-router-outlet></ion-router-outlet>
 
-
-  <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
-    <defs>
-          <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />    
-              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-              <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
-          </filter>
-      </defs>
-  </svg>
 </ion-app>
