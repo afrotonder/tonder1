@@ -178,6 +178,7 @@ ul {
   margin: auto;
   // margin-top: 25px;
   list-style: circle !important;
+  --background: none;
 }
 
 #feats {
@@ -186,6 +187,7 @@ ul {
 .footer-text-container {
   display: flex;
   justify-content: center;
+  width: 23%;
   // margin-top: 27%;
 }
 
@@ -331,6 +333,7 @@ ul {
     display: flex;
     justify-content: center;
     margin-top: 0%;
+    width: 90%;
   }
 
   .footer-text {
