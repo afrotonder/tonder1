@@ -15,18 +15,27 @@ export class Tab2Page {
 
     this.portfolioItems = [
       {
-        name: 'Freelance Web3 Development',
+        name: 'Thunder1 Consulting',
         workedFrom: 'November 2021 - Present',
-        src: '',
+        src: 'afrotonder.com/tabs/portfolio',
         img: '../../assets/images/2286.png',
-        jobTitle: 'Web3 Developer',
-        desc: `The metaverse is a beautiful place full of NFTs & riches, but to reach it one must spawn a portal to it: Web3.`,
+        jobTitle: 'Consultant/Developer',
+        desc: `Thunder1 Consulting is my personal SAAS & tech consulting company, where I create hightly scalable progressive web apps that
+              solve client problems using the best and most cost effective toolsets.`,
         myPosition: `I specialize in building NFT projects from scratch, web3 integration for minting, rarity websites, generative art, etc.
-                     I also specialize in creating simple contracts using contract generating tools such as Factoria.app & thirdweb.com.`,
+                     I also specialize in creating audited smart contracts for drops, marketplace, auctions, collections etc, using the thirdweb.com.`,
         tasks: [
           { 
+            nm: 'Manantial Blanco Marketplace',
+            desc: `Digital asset marketplace for all NFT collections created under the Manantial Blanco umbrella.`
+           },
+           { 
+            nm: 'Alebrijes, Alebrijes! Auction House',
+            desc: `Auction house for the famous Alebrijes, Alebrijes! art collection.`
+           },
+          { 
             nm: 'CryptoBangers Music NFT Platform',
-            desc: `Unlockable content site for the CryptoBangersNFT collection.`
+            desc: `Music streaming webapp exclusively for CryptoBangers NFT holders.`
            },
           { 
             nm: 'CyberJibaNFT Dapp',
@@ -40,7 +49,7 @@ export class Tab2Page {
             nm: 'Paddlez Web3 Game',
             desc: `Simple utility game only available to WAGMIBALLZ NFT holders.`
            },
-            { nm: 'PunkForce Rarity Site:', 
+            { nm: 'PunkForce Rarity Site', 
               desc: `Rarity website for the CC0 NFT collection PunkForce.` 
             }, 
             { 
@@ -57,11 +66,17 @@ export class Tab2Page {
               }
           ],
             stack: [
-              '../../assets/images/moralis.png',
-              '../../assets/images/ionic-icon.png', 
+            '../../assets/images/ionic-icon.png',
             '../../assets/images/ts-icon.png', 
             '../../assets/images/angular-icon.png', 
             '../../assets/images/firebase.png', 
+            '../../assets/images/thirdweb.png',
+            '../../assets/images/mm.png',
+            '../../assets/images/wc.png',
+            '../../assets/images/moralis.png',
+            '../../assets/images/nftport.jpg',
+
+
             // '../../assets/images/android.png', 
             // '../../assets/images/xcode-icon.png',
             
@@ -69,11 +84,18 @@ export class Tab2Page {
           ],        // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
         data: [
           {  
-            src: 'https://cryptobangers.io/home',  
-            img: '../../assets/images/cbu1.png', 
-            nm: 'CryptoBangers Music NFT Platform', 
-            title: 'CryptoBangers.io', 
-            desc: `Official NFT gated website for the CryptoBangersNFT Collections' unlockable content.` 
+            src: 'https://manantialblanco.com',  
+            img: '../../assets/images/manan.png', 
+            nm: 'Manantial Blanco Marketplace', 
+            title: 'manantialblanco.com', 
+            desc: `Official Manantial Blanco Marketplace website.` 
+          },
+          {  
+            src: 'https://alebrijes-alebrijes.com',  
+            img: '../../assets/images/aleale.png', 
+            nm: 'Alebrijes, Alebrijes! Auction House', 
+            title: 'alebrijes-alebrijes.com', 
+            desc: `Official Auction House for the Alebrijes, Alebrijes! art collection by Estudio Linares.` 
           },
           {  
             src: 'https://cyberjiba.io',  
@@ -100,7 +122,7 @@ export class Tab2Page {
           },
           {  src: 'https://punkforce-rarity.web.app/home', 
                   img: '../../assets/images/punkforce.png', 
-                  nm: 'PunkForce Rarity Site:', 
+                  nm: 'PunkForce Rarity Site', 
                   title: 'PunkForceRarity', 
                   desc: 'Rarity site for the PunkForce NFT Collection' 
                 },
@@ -140,14 +162,15 @@ export class Tab2Page {
         desc: `APS Health is a leading health data management company based in Puerto Rico, known for their many clinics and mental health services such as APS Optimind and APS MindSpa.`,
         myPosition: 'Originally hired as a BI Analyst, my position quickly shifted to a BI Developer due to my skillset. My responsibilities include:',
         tasks: [
-                { nm: 'BARGE:', 
-                  desc: 'Helped scale in-house reporting tool by replacing jQuery with ES6 modules, implementing npm as a package manager for easy updates and adding Power Bi capabilities to replace data intense reports.' }, 
+                { nm: 'BARGE', 
+                  desc: 'Helped scale in-house reporting tool by replacing jQuery with ES6 modules, implementing npm as a package manager for easy updates and adding Power Bi capabilities to replace data intense reports.' 
+                }, 
                 { 
-                  nm: 'Power BI: ',
+                  nm: 'Power BI',
                   desc: 'Recreated existing reports in Power Bi to enable users access to more data dynamically and stabily, considering the constant movement of data in the health industry.'
                  },
                 { 
-                  nm: 'Git/DevOps: ',
+                  nm: 'Git/DevOps',
                   desc: 'Drove initiative to replace SVN(Apache Subversion) for the modern Git version control system so company software development can follow modern coding standards.'
                  }
               ],
@@ -180,14 +203,14 @@ export class Tab2Page {
         jobTitle: 'Frontend Developer',
         desc: 'Food ordering app designed to schedule orders ASAP, for a date at 8pm, or for a party next week.',
         myPosition: 'Worked as a frontend developer to quickly create a working frontend in a 3 month time period.',
-        // tasks: [
-        //         { nm: 'TuChequera Móvil: ', desc: 'A powerful, hybrid accounting app available for Android and iOS. I am currently fully responsible for app store deployments, app development and API maintanence. ' },
-        //         { nm: 'TuChequera.com:  ', 
-        //           desc: `As the website is more cumbersome, styling and SEO responsibilities were given to me considering my experience designing websites. 
-        //                  As the main web development team develops new features I fix/detail styles and run SEO tests so the site is always looking good & feeling smooth. I was also
-        //                  responsible for setting up the current website customer support chat powered by PureChat.`
-        //         }, 
-        //       ],
+        tasks: [
+          { nm: 'Yibzer App', 
+            desc: `Took over frontend design of the app while head developer focused on API integration & other backend tasks. As the head
+                    frontend developer my responsabilities included but were not limited to creating clean, user friendly designs that worked
+                    both for smartphones and tablets, testing API endpoints to make sure backend & frontend are synced, and approve or discard desings
+                    deemed not user friendly.`
+          }, 
+              ],
         stack: ['../../assets/images/ionic-icon.png', 
                 '../../assets/images/ts-icon.png', 
                 '../../assets/images/angular-icon.png', 
@@ -235,8 +258,8 @@ export class Tab2Page {
         desc: 'TuChequera.com is a local accounting platform aimed for small & personal businesses. They have a subscription based web platform and a free companion app so all you data is accessible 24/7 from anywhere.',
         myPosition: 'Hired as a front end developer, my time in the company eventually lead me to be the core developer of the mobile application. My full responsibilities include:',
         tasks: [
-                { nm: 'TuChequera Móvil: ', desc: 'A powerful, hybrid accounting app available for Android and iOS. I am currently fully responsible for app store deployments, app development and API maintanence. ' },
-                { nm: 'TuChequera.com:  ', 
+                { nm: 'TuChequera Móvil', desc: 'A powerful, hybrid accounting app available for Android and iOS. I am currently fully responsible for app store deployments, app development and API maintanence. ' },
+                { nm: 'TuChequera.com', 
                   desc: `As the website is more cumbersome, styling and SEO responsibilities were given to me considering my experience designing websites. 
                          As the main web development team develops new features I fix/detail styles and run SEO tests so the site is always looking good & feeling smooth. I was also
                          responsible for setting up the current website customer support chat powered by PureChat.`
@@ -275,42 +298,7 @@ export class Tab2Page {
 
       },
 
-      {
-        name: 'CATEC',
-        workedFrom: 'January 2016 - July 2018',
-        src: 'http://catec.upr.edu/',
-        img: '../../assets/images/catec.png',
-        jobTitle: 'Full Stack Developer',
-        desc: '',
-        myPosition: 'At CATEC I learned how to build and deploy my first websites.',
-        tasks: [
-                { nm: 'CATEC Site:', desc: 'something to say about this' }, 
-                { nm: 'FireCollect:', desc: 'something to say about this' }, 
-              ],
-        stack: [
-                '../../assets/images/php-icon.png', 
-                '../../assets/images/js-icon.png', 
-                '../../assets/images/bootstrap-icon.png', 
-                '../../assets/images/wordpress-icon.png'],
-        // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
-        data: [
-          { 
-            src: 'http://catec.upr.edu/', 
-            img: '../../assets/images/catec1.png', 
-            nm: 'Center For Applied Tropical Ecology and Conservation', 
-            title: 'CATEC', 
-            desc: 'Official website CATEC, a reasearch facility located at the University of Puerto Rico, Rio Piedras Capus.' 
-          },
-          { 
-            src: 'http://firecollect.com/', 
-            img: '../../assets/images/firecollect.png', 
-            nm: 'Fire Collect', 
-            title: 'FireCollect', 
-            desc: 'Site for Firecollect: Metadata Collection Site.' 
-          },
-      ]
-
-      },
+      
       {
         name: 'Get(IT)Virtual',
         workedFrom: 'August 2016 - December 2017',
@@ -318,13 +306,13 @@ export class Tab2Page {
         img: '../../assets/images/getITvirtual.png',
         jobTitle: 'WordPress Developer',
         desc: '',
-        myPosition: 'As my first work experience, using WordPress was great for my development skills. My tasks included :',
+        myPosition: 'As my first work experience, using WordPress was great for my development skills. My tasks included:',
         tasks: [
                 { 
-                  nm: 'WordPress Sites:', 
+                  nm: 'WordPress Sites', 
                   desc: 'Build user friendly WordPress apps for clients using top-notch plugins and beautiful themes.' }, 
                 { 
-                  nm: 'Design Process:', 
+                  nm: 'Design Process', 
                   desc: 'As part of the core design team I participated in hours long design sprints to get products ready for scheduled releases.' }, 
               ],
         stack: ['../../assets/images/wordpress-icon.png'],
@@ -345,6 +333,52 @@ export class Tab2Page {
           }
           
         ]
+
+      },
+      {
+        name: 'CATEC',
+        workedFrom: 'January 2016 - July 2018',
+        src: 'http://catec.upr.edu/',
+        img: '../../assets/images/catec.png',
+        jobTitle: 'Full Stack Developer',
+        desc: '',
+        myPosition: 'At CATEC I learned how to build and deploy my first websites.',
+        tasks: [
+                { nm: 'CATEC Site', desc: `The official portal for CATEC, which is still up and running today, was created using WordPress
+                                            & allowed me to learn/implement modern web practices such as parallax scrolling, SEO, HTTPS security, and others.` }, 
+                { nm: 'FireCollect', desc: `My first official full stack project for CATEC, FireCollect is a Research Database Portal that
+                                            contains all CATEC research data, publications, partner profiles, and more. My tasks were to aid in the design phase,
+                                            implement frontend features & create backend API calls. This project was created using PHP, jQuery & CSS
+                                            with a ThemeForest purchased template & used a custom, self hosted PHP API to call data from the CATEC databases.` }, 
+                { nm: 'CATEC Backup Tool', desc: `One of my most notable tasks include a custom in-house backup tool, coded using Python, Shell Script & a cronjob,
+                                                   to keep an up to date backup of our code redundant in our development & backup servers. 
+                                                  ` }, 
+                { nm: 'Miscellaneous', desc: `As CATEC was a research center, other miscellaneus tasks were assigned to me, which include fixing
+                                             failing computers, updating research partners computers, installing software, & more.` }, 
+
+              ],
+        stack: [
+                '../../assets/images/php-icon.png', 
+                '../../assets/images/js-icon.png', 
+                '../../assets/images/bootstrap-icon.png', 
+                '../../assets/images/wordpress-icon.png'],
+        // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
+        data: [
+          { 
+            src: 'http://catec.upr.edu/', 
+            img: '../../assets/images/catec1.png', 
+            nm: 'Center For Applied Tropical Ecology and Conservation', 
+            title: 'CATEC', 
+            desc: 'Official website CATEC, a reasearch facility located at the University of Puerto Rico, Rio Piedras Campus.' 
+          },
+          { 
+            src: 'http://firecollect.com/', 
+            img: '../../assets/images/firecollect.png', 
+            nm: 'Fire Collect', 
+            title: 'FireCollect', 
+            desc: 'Site for Firecollect: Metadata Collection Site.' 
+          },
+      ]
 
       },
     ]
