@@ -4,16 +4,16 @@
   </ion-item>
  <ion-list>
     
-  <ion-item *ngFor="let item of portfolioItems">
+  <ion-item class="portfolioItem" *ngFor="let item of portfolioItems">
 
-<!-- header left column content -->
-    <ion-item lines="none" slot="start" class="portfolioAvatar" style="top: 0; position: absolute; margin-top: 10px;">
+    <!-- header left column content -->
+    <ion-item lines="none" slot="start" class="portfolioAvatar" >
       <a href="{{item.src}}" target="_blank" >
-        <img  style="width: 50px; border-radius: 50%; margin-top: 2%; background-color: white; height: 50px;"src="{{item.img}}" />
+        <img class="portfolioAvatarImage" src="{{item.img}}" />
       </a>
     </ion-item>
     <!-- middle content -->
-    <ion-list lines="none" style="display: flex; flex-direction: column; margin-left: 90px; width: 55%;">
+    <ion-list lines="none" class="portfolioItemList">
       <!-- header data -->
       <div>
           <ion-label> 
@@ -26,42 +26,32 @@
         <p>{{item.desc}}</p>
         <p>{{item.myPosition}}</p>
         <ion-list>
-          <article *ngFor="let task of item.tasks" style="display: flex; justify-content: space-evenly;">
+          <article *ngFor="let task of item.tasks" class="taskItem">
             <p class="taskName">
               <ion-icon color="warning" name="flash-sharp"></ion-icon> 
               <b class="task">{{task.nm}}</b>
             </p>
-            <p style="width: 75%; margin-left: 2%; text-align: justify;"> 
+            <p class="taskItemDesc"> 
               {{task.desc}}
             </p>
           </article>
-          
-          <!-- <p lines="none" *ngFor="let task of item.tasks">
-            <ion-icon color="warning" name="flash-sharp"></ion-icon> 
-            <b style="color: black">{{task.nm}}</b> 
-            {{task.desc}}
-          </p> -->
         </ion-list>
       </div>
 
-      <div style="display: flex;  flex-direction: row;">
-        <!-- <ion-icon name="{{item.stack[i]}}"></ion-icon>  -->
-        <img  *ngFor="let item of item.stack" src="{{item}}" alt="" style="width: 6%; height: 6%; padding: 1%;">
+      <div class="stackIconsItem">
+        <img  *ngFor="let item of item.stack" src="{{item}}" alt="" class="stackIcon">
       </div>
     </ion-list>
     
 <!-- right side colunmn content -->
-    <ion-item lines="none" style="margin: auto; width: 40% ;">
-      <!-- <div style="display: flex;  flex-direction: column;">
-        <img  *ngFor="let item of item.gallery" src="{{item}}" alt="" style=" padding: 1%;">
-      </div>    -->
+    <ion-item class="slide" lines="none" >
 
-      <ion-slides style=" margin: auto;" pager [options]="{ slidesPerView: true, loop: false }">
-        <ion-slide style="margin-bottom: 10%" *ngFor="let item of item.data">
+      <ion-slides class="slidesComponent" pager [options]="{ slidesPerView: true, loop: false }">
+        <ion-slide class="slideElement" *ngFor="let item of item.data">
 
           <a href="{{item.src}}" target="_blank">
-            <div style="margin-bottom: 20px">
-              <img src="{{item.img}}" alt="" style=" padding: 1%;">
+            <div class="slideImageContainer">
+              <img class="slidesImage" src="{{item.img}}" alt="" >
             </div>
           </a>
          

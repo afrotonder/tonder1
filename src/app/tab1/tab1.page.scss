@@ -1,4 +1,4 @@
-@use '../../theme/variables.scss' ;
+@use '../../theme/variables.scss';
 
 .stackParagraph {
   margin-bottom: 10%;
@@ -8,7 +8,7 @@
   margin-left: 2%;
 
 
-  .hobbiesComponent{
+  .hobbiesComponent {
     display: flex;
     flex-direction: column;
   }
@@ -19,6 +19,7 @@
   margin-right: 15px;
   color: blueviolet;
 }
+
 .toolIcon {
   font-size: 18px;
   color: orange;
@@ -42,36 +43,36 @@
 }
 
 .miscCard {
- display: flex;
- justify-content: center;
- flex-direction: column;
-//  margin-left: auto;
-//  margin-right: auto;
- width: 40%;
- height: 400px;
-//  background-color: #b6ddbf;
-
-// faded pine green
-// background: #F7F8F8;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to right, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  //  width: 40%;
+  //  height: 400px;
 
 
-// grade gray
-// background: #bdc3c7;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 450px;
 
-// midnight city
-  background: #232526;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // midnight city
+  background: #232526;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 }
 
 .hobbieImage {
-  width: 70%;
+  width: 45%;
+  transition: transform .2s;
+  /* Animation */
+
+}
+
+.hobbieImage:hover {
+  transform: scale(1.6);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .miscCardImg {
@@ -88,4 +89,30 @@ ion-card-subtitle {
 }
 
 
+.skillItem {
+  width: 30%;
+}
 
+.toolItem {
+  width: 100%;
+}
+
+.hobbiesList {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.hobbieTitle {
+  margin: 20px auto 20px auto;
+}
+
+.hobbieCardContent {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.hobbieCardText {
+  text-align: center;
+}

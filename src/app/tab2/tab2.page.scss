@@ -3,8 +3,10 @@
 }
 
 .portfolioAvatar {
-    border-radius:50%;
-
+    border-radius: 50%;
+    top: 0;
+    position: absolute;
+    margin-top: 10px;
 }
 
 .taskName {
@@ -12,4 +14,92 @@
     text-align: center;
     width: 250px;
 
+}
+
+.slidesImage {
+    padding: 1%;
+
+}
+
+
+
+.slideImageContainer {
+    margin-bottom: 20px;
+
+}
+
+
+
+.slide {
+    transition: transform .2s;
+    /* Animation */
+    margin: auto;
+    width: 40%;
+}
+
+.slide:hover {
+    transform: scale(1.6);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    // background-color: red;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: -220px;
+    width: 37.9%;
+
+}
+
+.portfolioItem {
+
+    padding-top: 30px;
+    --inner-padding-bottom: 35px
+}
+
+.task {
+    text-align: start;
+    margin-left: 5px;
+}
+
+.portfolioAvatarImage {
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 2%;
+    background-color: white;
+    height: 50px;
+}
+
+.portfolioItemList {
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    width: 55%;
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.taskItemDesc {
+    width: 75%;
+    margin-left: 2%;
+    text-align: justify;
+}
+
+.stackIconsItem {
+    display: flex;
+    flex-direction: row;
+}
+
+.stackIcon {
+    width: 6%;
+    height: 6%;
+    padding: 1%;
+}
+
+.slidesComponent {
+    margin: auto;
+}
+
+.slideElement {
+    margin-bottom: 10%;
 }

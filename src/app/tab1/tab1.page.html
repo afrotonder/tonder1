@@ -1,8 +1,6 @@
-<!-- <ion-header [translucent]="true"> -->
   <ion-content [fullscreen]="true">
     <!-- OFFER  -->
     <ion-item>
-      <!-- <ion-title size="large"></ion-title> -->
       <h1>OFFER</h1>
     </ion-item>
     <ion-item lines="none">
@@ -16,16 +14,12 @@
         education my skill set includes working on Data Indexing apps, personal
         finance PWAs and Business Data Analysis.
 
-        <!-- <br />
-        <br />
-        I'm passionate about optimization and discipline;  -->
-
         <br />
         <br />
         My problem solving skills include:
 
         <ion-list>
-          <ion-item style="width: 30%" *ngFor="let skill of skillList">
+          <ion-item class="skillItem" *ngFor="let skill of skillList">
             <ion-icon class="skillIcon" name="{{skill.icon}}"></ion-icon>
             {{skill.name}}
           </ion-item>
@@ -46,7 +40,7 @@
         <br />
 
         <ion-list>
-          <ion-item style="width: 100%" *ngFor="let tool of toolList">
+          <ion-item class="toolItem" *ngFor="let tool of toolList">
             <ion-icon class="toolIcon" name="{{tool.icon}}"></ion-icon>
             {{tool.name}}
           </ion-item>
@@ -57,7 +51,7 @@
         Other tools and software I have experience with:
 
         <ion-list>
-          <ion-item style="width: 100%" *ngFor="let tool of otherTools">
+          <ion-item class="toolItem" *ngFor="let tool of otherTools">
             <ion-icon class="otherToolIcon" name="{{tool.icon}}"></ion-icon>
             {{tool.name}}
           </ion-item>
@@ -68,7 +62,6 @@
 
     <!-- MISC  -->
     <ion-item>
-      <!-- <ion-title size="large"></ion-title> -->
       <h1>HOBBIES, INTERESTS & OTHERS</h1>
     </ion-item>
     <div class="hobbiesComponent" >
@@ -80,27 +73,21 @@
         </p>
       </ion-item>
 
-      <ion-list
-      style="
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-      "
-    >
+      <ion-list class="hobbiesList">
       <ion-card
         class="miscCard"
-        style="width: 550px;    display: flex;
-        flex-direction: column;"
+       
         *ngFor="let hobbie of myHobbiesList"
       >
-      <ion-card-title style="    margin: 10% auto;">{{hobbie.title}}</ion-card-title>
+      
+      <ion-card-title class="hobbieTitle">{{hobbie.title}}</ion-card-title>
 
-        <ion-card-content style="display: flex; justify-content: center; padding: 0;">
+        <ion-card-content class="hobbieCardContent">
           <img *ngIf="hobbie.isImage" class="hobbieImage"  src="{{hobbie.url}}" alt="" />
 
           <iframe *ngIf="!hobbie.isImage" [src]="hobbie.url | safe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </ion-card-content>
-        <ion-card-content style="    text-align: center;">
+        <ion-card-content class="hobbieCardText">
           <ion-card-subtitle>{{hobbie.description}}</ion-card-subtitle>
         </ion-card-content>
       </ion-card>
