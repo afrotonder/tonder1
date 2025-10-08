@@ -1,5 +1,17 @@
 @use '../assets/afrotonder.scss' ;
 
+.ngmt-15 {
+  // margin-top: -5px;
+}
+
+.projectLink {
+  margin: 0;
+}
+
+.footer-text {
+  color: white !important;
+}
+
 .mainSideMain {
   height: 100%;
 }
@@ -43,11 +55,16 @@
 }
 
 .descriptionContainer {
-  margin-top: 10%;
+  margin-top: 5%;
+  text-align: center;
 }
 
 .titleText {
   color: white;
+}
+
+.mt-1 {
+  margin-top: 1%;
 }
 
 .titleName {

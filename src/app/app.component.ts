@@ -1,4 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { register } from 'swiper/element/bundle';
+
+register();
 
 @Component({
   selector: 'app-root',
@@ -22,6 +25,7 @@ export class AppComponent {
    footer: string;
    contactIcons: Array<any>;
    jobList: Array<any>;
+   highlightProjects: Array<any>;
 
   constructor() {
 
@@ -29,34 +33,56 @@ export class AppComponent {
     this.lastNames = "Rosado Ramírez"
     this.sm_uname = "O. Rosado Ramírez";
     this.handle = "'afrotonder'";
-    this.title = "⚡Full Stack Developer ⚡Mobile Developer ⚡Tech Consultant"
+    this.title = ""
     this.slogan = "Full-time problem solver";
     this.job1 = "TuChequera.com";
     this.job2 = "APS Health";
     this.footer = `afrotonder © ${new Date().getFullYear().toString()}`;
 
     this.titles = [
-      "⚡Full Stack Developer",
-      "⚡Mobile Developer",
-      "⚡Tech Consultant"
+      "🧑🏾‍💻Full Stack Developer 📱Mobile Developer",
+      "📿Angular Evangelist 🪙Web3 Consultant",
     ]
 
     this.jobList = [
-      {
-        title: "Full Stack Developer",
-        employer: "TuChequera.com",
-        url: "https://tuchequera.com/"
-      },
-      {
-        title: "BI Developer",
+       {
+        title: "⚡ Software Developer",
         employer: "APS Health",
         url: "https://apshealth.com/"
       },
       {
-        title: "Web3 Consultant",
-        employer: "Thunder1 Consulting",
-        url: "afrotonder.com"
+        title: "⚡ Full Stack Developer",
+        employer: "TuChequera.com",
+        url: "https://tuchequera.com/"
       },
+     
+      // {
+      //   title: "Web3 Consultant",
+      //   employer: "Alebrijes, Alebrijes!",
+      //   url: "alebrijes-alebrijes.com"
+      // },
+    ]
+
+
+    this.highlightProjects = [
+      {
+        title: "TuChequera Móvil",
+        url: "",
+        urls: [
+               "https://apps.apple.com/do/app/tuchequera-m%C3%B3vil/id1141118902?l=en-GB",
+               "https://play.google.com/store/apps/details?id=com.ycspr.tuchequera&hl=es_PR&pli=1"
+              ],
+      },
+       {
+        title: "Manantial Blanco Marketplace",
+        url: "https://marketplace.manantialblanco.com/home",
+        urls: [],
+      },
+      // {
+      //   title: "WavBlock",
+      //   url: "https://marketplace.manantialblanco.com/home",
+      //   urls: [],
+      // },
     ]
 
     this.contactIcons = [

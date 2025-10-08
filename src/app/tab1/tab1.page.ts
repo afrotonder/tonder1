@@ -1,6 +1,4 @@
-import { Component, Pipe, PipeTransform} from '@angular/core';
-// import SwiperCore, { Autoplay, Keyboard, Pagination, Scrollbar, Zoom } from 'swiper';
-// SwiperCore.use([Autoplay, Keyboard, Pagination, Scrollbar, Zoom]);
+import { Component, Pipe, PipeTransform } from '@angular/core';
 
 @Component({
   selector: 'app-tab1',
@@ -13,6 +11,7 @@ export class Tab1Page {
   stackParagraph: string;
   otherParagraph: string;
   skillList: Array<any>;
+  skillList2: Array<any>;
   toolList: Array<any>;
   otherTools: Array<any>;
   miscList: Array<any>;
@@ -28,52 +27,72 @@ export class Tab1Page {
     this.otherParagraph = ``
 
     this.myHobbiesList = [
-      { 
-        name: "", 
-        icon: "", 
-        title: 'Favorite movies', 
-        description: "Heres a list of movies I've watched over 6 times each.", 
+      {
+        name: "",
+        icon: "",
+        title: 'Favorite movies',
+        description: "Heres a list of movies I've watched over 6 times each.",
         url: '../../assets/images/movies.png',
         isImage: true,
         isVideo: false
-       },
-       { 
-        name: "", 
-        icon: "", 
-        title: 'Jumping Rope', 
-        description: "Jumping rope keeps me disciplined, energized & mega pumped.", 
+      },
+      {
+        name: "",
+        icon: "",
+        title: 'Jumping Rope',
+        description: "Jumping rope keeps me disciplined, energized & mega pumped.",
         url: 'https://youtube.com/embed/opPiQW70hXM?feature=share',
         isImage: false,
         isVideo: true
-       },
-       { 
-        name: "", 
-        icon: "", 
-        title: 'Video Games', 
-        description: "Throughout the years I discovered I loved finding and documenting glitches in videos games. Here's an example!", 
+      },
+      {
+        name: "",
+        icon: "",
+        title: 'Sim Racing',
+        description: "My favorite way to feed my competitive spirit is via motorsports & racing games!",
+        url: 'https://www.youtube.com/embed/Ojxd7rYOhlE?si=6B3lVcLazJBS899s',
+        isImage: false,
+        isVideo: false
+
+      },
+      {
+        name: "",
+        icon: "",
+        title: 'Glitch Hunting',
+        description: "Throughout the years I discovered I loved finding and documenting glitches in videos games. Here's an example!",
         url: 'https://www.youtube.com/embed/kg_zZMPwOb0?si=aqOtfJIjnU1szyrl',
         isImage: false,
         isVideo: false
 
-       },
+      },
     ]
 
-    this.skillList = [{ 'name': 'User focused UX/UI Design', 'icon': 'prism-outline' },
-    { 'name': 'Hybrid Mobile App Development', 'icon': 'phone-portrait-outline' },
-    { 'name': 'Database Creation/Maintanence', 'icon': 'server-outline' },
-    { 'name': 'Script Automation', 'icon': 'code-slash-outline' },
-    { 'name': 'PWA Deployments', 'icon': 'cloud-done-outline' },
-    { 'name': 'Data Analysis via Reports', 'icon': 'analytics-outline' },
-    { 'name': 'UX/UI Design', 'icon': 'pizza-outline' },
+    this.skillList = [
+      { 'name': 'User focused UX/UI Design', 'icon': 'prism-outline' },
+      { 'name': 'Hybrid Mobile App Development', 'icon': 'phone-portrait-outline' },
+      { 'name': 'Brand Design', 'icon': 'sparkles-outline' },
+      { 'name': 'Native App Store Deployments (Android & iOS)', 'icon': 'apps-outline' },
+      { 'name': 'PWA Deployments', 'icon': 'cloud-done-outline' },
+
+    ]
+
+    this.skillList2 = [
+      { 'name': 'Optimal Tooling Strategies', 'icon': 'hammer-outline' },
+      { 'name': 'SEO Management', 'icon': 'bar-chart-outline' },
+      { 'name': 'Database Creation/Maintanence', 'icon': 'server-outline' },
+      { 'name': 'Script Automation', 'icon': 'code-slash-outline' },
+      { 'name': 'Data Analysis via Reports', 'icon': 'analytics-outline' },
+
     ]
 
     this.toolList = [
-      { name: "JS (ES6+)", icon: "logo-javascript", desc: '' },
+      { name: "JS/TypeScript (ES6+)", icon: "logo-javascript", desc: '' },
       { name: "HTML", icon: "logo-html5" },
       { name: "CSS/SCSS", icon: "logo-css3" },
       { name: "Angular", icon: "logo-angular" },
       { name: "Ionic", icon: "logo-ionic" },
-      { name: "Capacitor", icon: "logo-capacitor" }
+      { name: "Capacitor", icon: "logo-capacitor" },
+      { name: "VS Code", icon: "code-slash-outline" }
 
     ];
 
@@ -82,11 +101,12 @@ export class Tab1Page {
       { name: "Android", icon: "logo-android" },
       { name: "Linux", icon: "logo-tux" },
       { name: "ThirdWeb SDK", icon: "construct-outline" },
-      { name: "Factoria.app", icon: "chevron-up-outline" },
+      // { name: "Factoria.app", icon: "chevron-up-outline" },
       { name: "Firebase", icon: "logo-firebase" },
       { name: "GIMP", icon: "image-outline" },
+      { name: "SEMRush", icon: "stats-chart-outline" },
 
-      
+
     ];
 
     this.filmList = [
@@ -98,17 +118,20 @@ export class Tab1Page {
     ];
 
     this.artList = [
-      { src: "https://opensea.io/collection/karmakameleons",
+      {
+        src: "https://opensea.io/collection/karmakameleons",
         icon: "",
         title: 'Karma Kameleons Genesis',
         url: '../../assets/images/karma.gif'
       },
-      { src: "https://wagmiballznft.web.app/",
+      {
+        src: "https://wagmiballznft.web.app/",
         icon: "",
         title: 'WagmiballzNFT',
         url: '../../assets/images/wagmiballz.gif',
       },
-      { src: "https://cyberjiba.io",
+      {
+        src: "https://cyberjiba.io",
         icon: "",
         title: 'CyberJibaNFT CyberPava Graffiti',
         url: '../../assets/images/cyberpava.jpg'

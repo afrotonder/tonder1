@@ -26,6 +26,7 @@ header {
   font-size: 18px !important;
   // margin-top: 16%;
   font-weight: lighter;
+  margin: 0 auto 0 auto;
 }
 
 .mainSide {
@@ -339,6 +340,7 @@ ul {
   .footer-text {
     font-size: 10px;
     color: $lightText;
+    color: white !important;
   }
 
 }

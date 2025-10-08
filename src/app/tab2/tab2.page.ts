@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import SwiperCore, { Autoplay, Keyboard, Pagination, Scrollbar, Zoom } from 'swiper';
-import { IonicSlides } from '@ionic/angular';
+import { Component, ViewChild } from '@angular/core';
+import Swiper from 'swiper';
+import { IonModal } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab2',
@@ -9,18 +9,132 @@ import { IonicSlides } from '@ionic/angular';
 })
 
 export class Tab2Page {
+  @ViewChild(IonModal) siteSlider: IonModal;
+
+  swiper: Swiper;
+
   portfolioItems: Array<any>;
 
   constructor() {
 
     this.portfolioItems = [
+     
+      // aps
       {
-        name: 'Thunder1 Consulting',
-        workedFrom: 'November 2021 - Present',
+        name: 'APS Health',
+        workedFrom: 'August 2019 - Present',
+        src: 'https://apshealth.com/',
+        img: '../../assets/images/apslogo.png',
+        jobTitle: 'Software Developer',
+        desc: `APS Health is a leading health data management company based in Puerto Rico, known for their many clinics and mental health services such as APS Optimind and APS MindSpa.`,
+        myPosition: 'Originally hired as a BI Analyst, my position quickly shifted to a BI Developer and now Software Developer due to my broad skillset. My responsibilities include:',
+        tasks: [
+                { 
+                  nm: 'APS Clinics App', 
+                  desc: 'Aiding in the development and scaling of an in-house mobile application and API for clinic appointments.' 
+                }, 
+                { 
+                  nm: 'APS Provider Portal', 
+                  desc: 'Played a cruicial part in the core design and development of the company Provider Portal, a software tool used by all providers and clinics.' 
+                }, 
+                { nm: 'BARGE', 
+                  desc: 'Helped scale in-house reporting tool by replacing the core jQuery setup with modern ES6+ modules and JavaScript, implementing npm as a package manager for easy updates and adding Power Bi capabilities to replace data intense reports.' 
+                }, 
+                { 
+                  nm: 'Power BI',
+                  desc: 'Recreated existing reports in Power Bi to enable users access to more data dynamically and stabily, considering the constant movement of data in the health industry.'
+                 },
+                { 
+                  nm: 'Git/DevOps',
+                  desc: 'Drove initiative to replace SVN(Apache Subversion) for the modern Git version control system so company software development can follow modern coding standards.'
+                 }
+              ],
+        stack: [
+                '../../assets/images/php-icon.png', 
+                '../../assets/images/js-icon.png', 
+                '../../assets/images/powerbi.png', 
+                '../../assets/images/html-icon.png',
+                '../../assets/images/react-icon.png',
+                '../../assets/images/bootstrap-icon.png',
+
+              ],
+        // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
+        data: [{  src: 'https://apshealth.com', 
+                  img: '../../assets/images/brg1.png', 
+                  nm: 'BARGE Reporting App', 
+                  title: '', 
+                  desc: 'Official website for APS Health.' 
+                },
+                {  
+                  src: 'https://apshealth.com',  
+                  img: '../../assets/images/brg2.png', 
+                  nm: 'BARGE Reporting App', 
+                  title: '', 
+                  desc: 'Official website for APS Health.' 
+                },
+                
+
+                
+                ]
+      },
+
+      // tcc
+      {
+        name: 'TuChequera.com',
+        workedFrom: 'July 2018 - Present',
+        src: 'https://tuchequera.com/',
+        img: '../../assets/images/tcc.jpg',
+        jobTitle: 'Full Stack Developer',
+        desc: 'TuChequera.com is a local accounting platform aimed for small & personal businesses. They have a subscription based web platform and a free companion app so all you data is accessible 24/7 from anywhere.',
+        myPosition: 'Hired as a front end developer, my time in the company eventually lead me to be the core developer of the mobile application. My full responsibilities include:',
+        tasks: [
+                { nm: 'TuChequera Móvil', desc: 'A powerful, hybrid accounting app available for Android and iOS. I am currently fully responsible for app store deployments, app development and API maintanence. ' },
+                { nm: 'TuChequera.com', 
+                  desc: `As the website is more cumbersome, styling and SEO responsibilities were given to me considering my experience designing websites. 
+                         As the main web development team develops new features I fix/detail styles and run SEO tests so the site is always looking good & feeling smooth. I was also
+                         responsible for setting up the current website customer support chat powered by PureChat.`
+                }, 
+              ],
+        stack: ['../../assets/images/ionic-icon.png', 
+                '../../assets/images/ts-icon.png', 
+                '../../assets/images/angular-icon.png', 
+                '../../assets/images/android.png', 
+                '../../assets/images/xcode-icon.png',
+                '../../assets/images/google-lighthouse.png'
+
+              ],
+        // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
+        data: [
+               
+                { src: 'https://play.google.com/store/apps/details?id=com.ycspr.tuchequera', 
+                  img: '../../assets/images/tccm_md.png', 
+                  nm: 'TuChequera Móvil for Android', 
+                  title: 'TuChequeraMóvilAndroid', 
+                  desc: 'Accounting app thats easy to use and focuses on small businesses.' 
+                },
+                { src: 'https://apps.apple.com/us/app/tu-chequera/id1141118902', 
+                  img: '../../assets/images/tccm_ios.png', 
+                  nm: 'TuChequera Móvil for iOS', 
+                  title: 'TuChequeraMóvilAndroid', 
+                  desc: 'Accounting app thats easy to use and focuses on small businesses.' 
+                },
+                { src: 'https://tuchequera.com/', 
+                img: '../../assets/images/tccweb.png', 
+                nm: 'TuChequera.com', 
+                title: 'TuChequera.com', 
+                desc: 'Accounting app thats easy to use and focuses on small businesses.' 
+              },
+              ]
+
+      },
+
+      {
+        name: 'Web3 Consulting',
+        workedFrom: 'November 2021 - December 2024',
         src: 'afrotonder.com/tabs/portfolio',
         img: '../../assets/images/2286.png',
         jobTitle: 'Consultant/Developer',
-        desc: `Thunder1 Consulting is my personal SAAS & tech consulting company, where I create hightly scalable progressive web apps that
+        desc: `During the web3 bubble I started my personal SAAS & tech consulting venture, where I create hightly scalable progressive web apps that
               solve client problems using the best and most cost effective toolsets.`,
         myPosition: `I specialize in building NFT projects from scratch, web3 integration for minting, rarity websites, generative art, etc.
                      I also specialize in creating audited smart contracts for drops, marketplace, auctions, collections etc, using the thirdweb.com.`,
@@ -34,8 +148,8 @@ export class Tab2Page {
             desc: `Auction house for the famous Alebrijes, Alebrijes! art collection.`
            },
           { 
-            nm: 'CryptoBangers Music NFT Platform',
-            desc: `Music streaming webapp exclusively for CryptoBangers NFT holders.`
+            nm: 'WavBlock Live Performance Streaming Platform',
+            desc: `Music streaming webapp exclusively for private events.`
            },
           { 
             nm: 'CyberJibaNFT Dapp',
@@ -153,51 +267,11 @@ export class Tab2Page {
                 
                 ]
       },
-      {
-        name: 'APS Health',
-        workedFrom: 'August 2020 - Present',
-        src: 'https://apshealth.com/',
-        img: '../../assets/images/APS-V.png',
-        jobTitle: 'Business Intelligence Analyst',
-        desc: `APS Health is a leading health data management company based in Puerto Rico, known for their many clinics and mental health services such as APS Optimind and APS MindSpa.`,
-        myPosition: 'Originally hired as a BI Analyst, my position quickly shifted to a BI Developer due to my skillset. My responsibilities include:',
-        tasks: [
-                { nm: 'BARGE', 
-                  desc: 'Helped scale in-house reporting tool by replacing jQuery with ES6 modules, implementing npm as a package manager for easy updates and adding Power Bi capabilities to replace data intense reports.' 
-                }, 
-                { 
-                  nm: 'Power BI',
-                  desc: 'Recreated existing reports in Power Bi to enable users access to more data dynamically and stabily, considering the constant movement of data in the health industry.'
-                 },
-                { 
-                  nm: 'Git/DevOps',
-                  desc: 'Drove initiative to replace SVN(Apache Subversion) for the modern Git version control system so company software development can follow modern coding standards.'
-                 }
-              ],
-        stack: ['../../assets/images/php-icon.png', '../../assets/images/js-icon.png', '../../assets/images/powerbi.png', '../../assets/images/html-icon.png'],
-        // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
-        data: [{  src: 'https://apshealth.com', 
-                  img: '../../assets/images/brg1.png', 
-                  nm: 'BARGE Reporting App', 
-                  title: '', 
-                  desc: 'Official website for APS Health.' 
-                },
-                {  
-                  src: 'https://apshealth.com',  
-                  img: '../../assets/images/brg2.png', 
-                  nm: 'BARGE Reporting App', 
-                  title: '', 
-                  desc: 'Official website for APS Health.' 
-                },
-                
 
-                
-                ]
-      },
-
+        // yibzer
       {
         name: 'Yibzer by YCS Inc.',
-        workedFrom: 'July 2018 - Present',
+        workedFrom: 'April 2020 - August 2020',
         src: 'https://en.yibzer.com/',
         img: '../../assets/images/yib.webp',
         jobTitle: 'Frontend Developer',
@@ -248,57 +322,6 @@ export class Tab2Page {
               ]
 
       },
-
-      {
-        name: 'TuChequera.com',
-        workedFrom: 'July 2018 - Present',
-        src: 'https://tuchequera.com/',
-        img: '../../assets/images/tcc.jpg',
-        jobTitle: 'Full Stack Developer',
-        desc: 'TuChequera.com is a local accounting platform aimed for small & personal businesses. They have a subscription based web platform and a free companion app so all you data is accessible 24/7 from anywhere.',
-        myPosition: 'Hired as a front end developer, my time in the company eventually lead me to be the core developer of the mobile application. My full responsibilities include:',
-        tasks: [
-                { nm: 'TuChequera Móvil', desc: 'A powerful, hybrid accounting app available for Android and iOS. I am currently fully responsible for app store deployments, app development and API maintanence. ' },
-                { nm: 'TuChequera.com', 
-                  desc: `As the website is more cumbersome, styling and SEO responsibilities were given to me considering my experience designing websites. 
-                         As the main web development team develops new features I fix/detail styles and run SEO tests so the site is always looking good & feeling smooth. I was also
-                         responsible for setting up the current website customer support chat powered by PureChat.`
-                }, 
-              ],
-        stack: ['../../assets/images/ionic-icon.png', 
-                '../../assets/images/ts-icon.png', 
-                '../../assets/images/angular-icon.png', 
-                '../../assets/images/android.png', 
-                '../../assets/images/xcode-icon.png',
-                '../../assets/images/google-lighthouse.png'
-
-              ],
-        // gallery: ['https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y', 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'],
-        data: [
-               
-                { src: 'https://play.google.com/store/apps/details?id=com.ycspr.tuchequera', 
-                  img: '../../assets/images/tccm_md.png', 
-                  nm: 'TuChequera Móvil for Android', 
-                  title: 'TuChequeraMóvilAndroid', 
-                  desc: 'Accounting app thats easy to use and focuses on small businesses.' 
-                },
-                { src: 'https://apps.apple.com/us/app/tu-chequera/id1141118902', 
-                  img: '../../assets/images/tccm_ios.png', 
-                  nm: 'TuChequera Móvil for iOS', 
-                  title: 'TuChequeraMóvilAndroid', 
-                  desc: 'Accounting app thats easy to use and focuses on small businesses.' 
-                },
-                { src: 'https://tuchequera.com/', 
-                img: '../../assets/images/tccweb.png', 
-                nm: 'TuChequera.com', 
-                title: 'TuChequera.com', 
-                desc: 'Accounting app thats easy to use and focuses on small businesses.' 
-              },
-              ]
-
-      },
-
-      
       {
         name: 'Get(IT)Virtual',
         workedFrom: 'August 2016 - December 2017',

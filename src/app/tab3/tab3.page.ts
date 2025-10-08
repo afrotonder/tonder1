@@ -13,10 +13,6 @@ export class Tab3Page {
   }
 
   ngAfterViewInit()	{
-    this.renderResume()
   }
 
-  renderResume() {
-
-  }
 }

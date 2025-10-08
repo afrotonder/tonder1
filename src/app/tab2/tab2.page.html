@@ -44,20 +44,20 @@
     </ion-list>
     
 <!-- right side colunmn content -->
-    <ion-item class="slide" lines="none" >
+    <!-- <ion-item class="" lines="none" > -->
 
-      <ion-slides class="slidesComponent" pager [options]="{ slidesPerView: true, loop: false }">
-        <ion-slide class="slideElement" *ngFor="let item of item.data">
-
-          <a href="{{item.src}}" target="_blank">
-            <div class="slideImageContainer">
-              <img class="slidesImage" src="{{item.img}}" alt="" >
+      <swiper-container class="siteSlider" #siteSlider navigation="true" pagination="true" zoom="true">
+   
+        <swiper-slide  *ngFor="let sliderItem of item.data">          
+          <a href="{{sliderItem.src}}" target="_blank">
+            <div class="slideImageContainer"> 
+              <img class="slidesImage" src="{{sliderItem.img}}" alt="" >
             </div>
           </a>
-         
-        </ion-slide>
-      </ion-slides>
-     </ion-item>
+        </swiper-slide>
+  
+      </swiper-container>
+     <!-- </ion-item> -->
 
    
   </ion-item>

@@ -1,18 +1,23 @@
 <ion-tabs class="tonderTabs">
 
   <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="about">
-      <ion-icon class="aboutIcon" name="flash-outline"></ion-icon>
+    <ion-tab-button (click)="toggleIcon('about')" tab="about">
+      <ion-icon [name]="about ? 'flash' : 'flash-outline'" class="aboutIcon"></ion-icon>
       <ion-label>About</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="portfolio">
-      <ion-icon class="portfolioIcon" name="laptop-outline"></ion-icon>
+    <ion-tab-button (click)="toggleIcon('portfolio')" tab="portfolio">
+      <ion-icon [name]="portfolio ? 'laptop' : 'laptop-outline'" class="portfolioIcon"></ion-icon>
       <ion-label>Portfolio</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="resume">
-      <ion-icon class="resumeIcon" name="reader-outline"></ion-icon>
+    <!-- <ion-tab-button (click)="toggleIcon('code')" tab="code">
+      <ion-icon [name]="code ? 'terminal' : 'terminal-outline'" class="codeIcon"></ion-icon>
+      <ion-label>Code</ion-label>
+    </ion-tab-button> -->
+
+    <ion-tab-button (click)="toggleIcon('resume')" tab="resume">
+      <ion-icon [name]="resume ? 'reader' : 'reader-outline'" class="resumeIcon"></ion-icon>
       <ion-label>Resume</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
