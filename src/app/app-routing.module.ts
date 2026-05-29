@@ -14,7 +14,21 @@ const routes: Routes = [
   {
     path: 'tab4',
     loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
+  },
+  {
+    path: 'tndr1racing',
+    loadChildren: () => import('./tndr1racing/tndr1racing.module').then( m => m.Tndr1racingPageModule)
+  },
+  {
+    path: 'youtube',
+    loadChildren: () => import('./youtube/youtube.module').then( m => m.YoutubePageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   }
+
+
 
 ];
 @NgModule({

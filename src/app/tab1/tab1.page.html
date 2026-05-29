@@ -1,116 +1,133 @@
 <ion-content [fullscreen]="true">
-  <!-- OFFER  -->
-  <ion-item>
-    <h1>OFFER</h1>
-  </ion-item>
-  <ion-item lines="none">
-    <p>
-      <b>Full Stack Software Developer </b> with over 6 years of problem
-      solving experience.
 
-      <br />
-      <br />
-      Having worked in many different fields such as health, accounting and
-      education my skill set includes working on Data Indexing apps, personal
-      finance PWAs and Business Data Analysis.
+  <div class="aboutComponent">
+    <app-main-card class="aboutPeeker" [animate]="animate"></app-main-card>
 
-      <br />
-      <br />
+    <div class="skillsPart" > 
+      <!-- OFFER  -->
+      <ion-item>
+        <h1>OFFER</h1>
+      </ion-item>
+      
+      <ion-item lines="none" >
+        <article *ngIf="animate">
+          <p class="aboutTextP" *ngFor="let text of offerDescription" @slideUp>
+            {{text}}
+          </p>
+        </article>
+      </ion-item>
 
-    </p>
 
-      <p>
+      <div lines="none">
+        <p class="toolListTitle">
           My problem solving skills include:
         </p>
-    <div style="display: flex; width: 100%; justify-content: space-between;">
+        <div style="display: flex; width: 100%; justify-content: space-between;" *ngIf="animate">
 
-      <ion-list style="width: 47%;">
-      
-          <ion-item class="skillItem" *ngFor="let skill of skillList">
-            <ion-icon class="skillIcon" name="{{skill.icon}}"></ion-icon>
-            {{skill.name}}
-          </ion-item>
-        </ion-list>
+          <ion-list style="width: 47%;">
+
+            <div *ngFor="let skill of skillList" >
+              <ion-item  class="skillItem" >
+                <div class="skillItemContainer" @slideUp>
+                  <ion-icon class="skillIcon" name="{{skill.icon}}"></ion-icon>
+                    <p>
+                      {{skill.name}}
+                    </p>
+                </div>
+              </ion-item>
+            </div>
+         
+          </ion-list>
 
 
-      <ion-list style="width: 47%;">
-      
-          <ion-item class="skillItem" *ngFor="let skill of skillList2">
-            <ion-icon class="skillIcon" name="{{skill.icon}}"></ion-icon>
-            {{skill.name}}
-          </ion-item>
-        </ion-list>
+          <ion-list style="width: 47%;">
+            <div *ngFor="let skill of skillList2" >
+              <ion-item class="skillItem" >
+                  <div class="skillItemContainer" @slideUp>
+                    <ion-icon class="skillIcon" name="{{skill.icon}}"></ion-icon>
+                    <p>{{skill.name}}?</p>
+                  </div>
+              </ion-item>
+            </div> 
+          </ion-list>
 
+
+        </div>
+      </div>
+      <!-- END OFFER  -->
+
+      <!-- SKILLS  -->
+      <ion-item>
+        <h1>TOOLS</h1>
+      </ion-item>
+
+      <div lines="none">
+
+        <div style="display: flex; width: 100%; justify-content: space-between;" *ngIf="animate">
+
+          <ion-list style="width: 47%;">
+            <p class="toolListTitle">
+              My go-to stack:
+            </p>
+            <ion-item class="toolItem" *ngFor="let tool of toolList">
+              <div class="skillItemContainer" @slideUp>
+                <ion-icon class="skillIcon" name="{{tool.icon}}"></ion-icon>
+                <p>{{tool.name}}</p>
+              </div>
+            </ion-item>
+          </ion-list>
+
+
+
+          <ion-list style="width: 47%;">
+            <p class="toolListTitle">
+              Other relevant tools and software I have experience with:
+            </p>
+            <ion-item class="toolItem" *ngFor="let tool of otherDevTools">
+              <div class="skillItemContainer" @slideUp>
+                <ion-icon class="toolIcon" name="{{tool.icon}}"></ion-icon>
+                <p style="width: 100%;">{{tool.name}}</p>
+              </div>
+             
+            </ion-item>
+          </ion-list>
+        </div>
+      </div>
+
+      <div lines="none">
+
+        <div style="display: flex; width: 100%; justify-content: space-between;" *ngIf="animate">
+
+          <ion-list style="width: 47%;">
+            <p class="toolListTitle">
+              Image & Video Editing Tools
+            </p>
+            <ion-item class="toolItem" *ngFor="let tool of meadiaToolList">
+              <div class="skillItemContainer" @slideUp>
+                <ion-icon class="skillIcon" name="{{tool.icon}}"></ion-icon>
+                <p>{{tool.name}}</p>
+              </div>
+            </ion-item>
+          </ion-list>
+
+
+
+          <ion-list style="width: 47%;">
+            <p class="toolListTitle">
+              Random things I also know how to use:
+            </p>
+            <ion-item class="toolItem" *ngFor="let tool of otherTools">
+              <div class="skillItemContainer" @slideUp>
+                <ion-icon class="skillIcon" name="{{tool.icon}}"></ion-icon>
+                <p>{{tool.name}}</p>
+              </div>
+            </ion-item>
+          </ion-list>
+        </div>
+      </div>
+      <!-- END SKILLS  -->
 
     </div>
-  </ion-item>
-  <!-- END OFFER  -->
-
-  <!-- SKILLS  -->
-  <ion-item>
-    <h1>STACK</h1>
-  </ion-item>
-  <ion-item lines="none">
-
-    <div style="display: flex; width: 100%; justify-content: space-between;">
-
-      <ion-list style="width: 47%;">
-        <p>
-          My go-to stack:
-        </p>
-        <ion-item class="toolItem" *ngFor="let tool of toolList">
-          <ion-icon class="toolIcon" name="{{tool.icon}}"></ion-icon>
-          {{tool.name}}
-        </ion-item>
-      </ion-list>
-
-
-
-      <ion-list style="width: 47%;">
-        <p>
-          Other tools and software I have experience with:
-        </p>
-        <ion-item class="toolItem" *ngFor="let tool of otherTools">
-          <ion-icon class="otherToolIcon" name="{{tool.icon}}"></ion-icon>
-          {{tool.name}}
-        </ion-item>
-      </ion-list>
-    </div>
-  </ion-item>
-  <!-- END SKILLS  -->
-
-  <!-- MISC  -->
-  <ion-item>
-    <h1>HOBBIES, INTERESTS & OTHERS</h1>
-  </ion-item>
-  <div class="hobbiesComponent">
-
-    <ion-item lines="none">
-      <p>
-        Coding aside, I enjoy horror movies, jumping rope, collecting, tinkering and playing
-        video games. Check out some of my interests:
-      </p>
-    </ion-item>
-
-    <ion-list class="hobbiesList">
-      <ion-card class="miscCard" *ngFor="let hobbie of myHobbiesList">
-
-        <ion-card-title class="hobbieTitle">{{hobbie.title}}</ion-card-title>
-
-        <ion-card-content class="hobbieCardContent">
-          <img *ngIf="hobbie.isImage" class="hobbieImage" src="{{hobbie.url}}" alt="" />
-
-          <iframe *ngIf="!hobbie.isImage" [src]="hobbie.url | safe" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </ion-card-content>
-        <ion-card-content class="hobbieCardText">
-          <ion-card-subtitle>{{hobbie.description}}</ion-card-subtitle>
-        </ion-card-content>
-      </ion-card>
-    </ion-list>
-
   </div>
-  <!-- END MISC  -->
 </ion-content>
 <!-- </ion-header> -->

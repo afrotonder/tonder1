@@ -1,22 +1,36 @@
 <ion-tabs class="tonderTabs">
 
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button (click)="toggleIcon('about')" tab="about">
-      <ion-icon [name]="about ? 'flash' : 'flash-outline'" class="aboutIcon"></ion-icon>
-      <ion-label>About</ion-label>
+  <ion-tab-bar slot="{{slotPosition}}">
+    <ion-tab-button class="tabButton" (click)="toggleIcon('home')" tab="home">
+      <ion-icon [name]="home ? 'flash' : 'flash-outline'" class="homeIcon"></ion-icon>
+      <ion-label>Home</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button (click)="toggleIcon('portfolio')" tab="portfolio">
+    <ion-tab-button class="tabButton" (click)="toggleIcon('about')" tab="about">
+      <ion-icon [name]="about ? 'ribbon' : 'ribbon-outline'" class="aboutIcon"></ion-icon>
+      <ion-label>Skills</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button class="tabButton" (click)="toggleIcon('portfolio')" tab="portfolio">
       <ion-icon [name]="portfolio ? 'laptop' : 'laptop-outline'" class="portfolioIcon"></ion-icon>
       <ion-label>Portfolio</ion-label>
     </ion-tab-button>
 
+    <ion-tab-button class="tabButton" (click)="toggleIcon('tndr1racing')" tab="tndr1racing">
+      <ion-icon [name]="tndr1racing ? 'car-sport' : 'car-sport-outline'" class="racingIcon"></ion-icon>
+      <ion-label>Racing</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button class="tabButton" (click)="toggleIcon('youtube')" tab="youtube">
+      <ion-icon [name]="youtube ? 'logo-youtube' : 'logo-youtube'" class="youtubeIcon"></ion-icon>
+      <ion-label>YouTube</ion-label>
+    </ion-tab-button>
     <!-- <ion-tab-button (click)="toggleIcon('code')" tab="code">
       <ion-icon [name]="code ? 'terminal' : 'terminal-outline'" class="codeIcon"></ion-icon>
       <ion-label>Code</ion-label>
     </ion-tab-button> -->
 
-    <ion-tab-button (click)="toggleIcon('resume')" tab="resume">
+    <ion-tab-button class="tabButton" (click)="toggleIcon('resume')" tab="resume">
       <ion-icon [name]="resume ? 'reader' : 'reader-outline'" class="resumeIcon"></ion-icon>
       <ion-label>Resume</ion-label>
     </ion-tab-button>

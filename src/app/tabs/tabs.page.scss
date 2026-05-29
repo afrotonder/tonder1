@@ -1,14 +1,53 @@
+
 ion-tab-bar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end; //space-evenly;
 }
 
-.tonderTabs {
-  position: unset !important;
+ion-tab-bar{
+  --ion-background-color: none !important;
+  // zinc 
+  // background: #ADA996;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // deep space
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
 }
+
+ion-tab-button.tab-selected {
+  // .tab-selected {
+    background: #93928f !important;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #93928f) !important;  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #93928f) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  // }
+}
+
+.tabButton {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: white;
+
+
+}
+
+.homeIcon {
+  color: orange 
+}
+
 
 .aboutIcon {
-  color: orange;
+  color: rgb(24, 112, 255);
+}
+
+.youtubeIcon {
+  color: red;
+}
+
+.racingIcon {
+  color: yellow;
 }
 
 .portfolioIcon {
@@ -21,4 +60,30 @@ ion-tab-bar {
 
 .codeIcon {
   color: rgb(25, 85, 238);
+}
+// .tonderTabs {
+//     display: none;
+//   }
+@media screen and (min-width: 800px) {
+
+  
+.tonderTabs {
+  position: unset !important;
+}
+
+ion-tab-bar {
+  display: flex;
+  justify-content: flex-end; //space-evenly;
+}
+
+.tabButton {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: white;
+
+  &:hover {
+    background-color: rgb(220, 220, 220);
+  }
+}
+
 }

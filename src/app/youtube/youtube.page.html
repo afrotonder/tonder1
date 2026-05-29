@@ -1,0 +1,44 @@
+<ion-content>
+  <ion-item>
+    <h1>CONTENT CREATION</h1>
+  </ion-item>
+  <div class="hobbyComponent">
+
+    <ion-item lines="none">
+      <p class="pageDesc">
+        {{pageDescription}}
+      </p>
+    </ion-item>
+
+    <ion-list class="hobbyList">
+      <ion-card class="miscCard" *ngFor="let channel of channelList">
+
+
+
+        <!-- <ion-card-content class="hobbyCardContent"> -->
+          <div>
+            <div class="hobbyTitleComponent">
+              <ion-button href="{{channel.channelUrl}}" target="_blank" class="ytLink" fill="clear">
+                <p class="channelTitleText">{{channel.title}}</p><ion-icon name="open-outline"></ion-icon>
+              </ion-button>
+            </div>
+            <iframe class="videoIframe" *ngIf="!channel.isImage" [src]="channel.url | safe" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+
+            <div class="hobbyCardText">
+              <p>{{channel.description}}</p>
+
+            </div>
+          </div>
+
+
+        <!-- </ion-card-content> -->
+        <!-- <ion-card-content >
+        </ion-card-content> -->
+      </ion-card>
+    </ion-list>
+
+  </div>
+</ion-content>

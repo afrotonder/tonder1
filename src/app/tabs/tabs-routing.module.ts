@@ -8,6 +8,10 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
+        path: 'home',
+        loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
+      },
+      {
         path: 'about',
         loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
       },
@@ -24,13 +28,21 @@ const routes: Routes = [
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
+        path: 'tndr1racing',
+        loadChildren: () => import('../tndr1racing/tndr1racing.module').then(m => m.Tndr1racingPageModule)
+      },
+      {
+        path: 'youtube',
+        loadChildren: () => import('../youtube/youtube.module').then(m => m.YoutubePageModule)
+      },
+      {
         path: '',
-        redirectTo: '/tabs/about',
+        redirectTo: '/tabs/home',
         pathMatch: 'full'
       },
       {
         path: '**',
-        redirectTo: '/tabs/about',
+        redirectTo: '/tabs/home',
         pathMatch: 'full'
       }
     ]

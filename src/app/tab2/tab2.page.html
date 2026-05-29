@@ -1,69 +1,107 @@
 <ion-content>
-  <ion-item>
-    <h1>Developer Portfolio</h1>
-  </ion-item>
- <ion-list>
-    
-  <ion-item class="portfolioItem" *ngFor="let item of portfolioItems">
 
-    <!-- header left column content -->
-    <ion-item lines="none" slot="start" class="portfolioAvatar" >
-      <a href="{{item.src}}" target="_blank" >
-        <img class="portfolioAvatarImage" src="{{item.img}}" />
-      </a>
+  <div class="portfolioComponent" >
+    <ion-item>
+      <h1>Developer Portfolio</h1>
     </ion-item>
-    <!-- middle content -->
-    <ion-list lines="none" class="portfolioItemList">
-      <!-- header data -->
-      <div>
-          <ion-label> 
-          <h1>{{item.name}}</h1> <p>{{item.workedFrom}}</p>
-          <h3>{{item.jobTitle}}</h3>
-        </ion-label>
-      </div>
-      <!-- positon body -->
-      <div>
-        <p>{{item.desc}}</p>
-        <p>{{item.myPosition}}</p>
-        <ion-list>
-          <article *ngFor="let task of item.tasks" class="taskItem">
-            <p class="taskName">
-              <ion-icon color="warning" name="flash-sharp"></ion-icon> 
-              <b class="task">{{task.nm}}</b>
-            </p>
-            <p class="taskItemDesc"> 
-              {{task.desc}}
-            </p>
-          </article>
-        </ion-list>
-      </div>
+    <ion-list>
 
-      <div class="stackIconsItem">
-        <img  *ngFor="let item of item.stack" src="{{item}}" alt="" class="stackIcon">
-      </div>
-    </ion-list>
-    
-<!-- right side colunmn content -->
-    <!-- <ion-item class="" lines="none" > -->
+      <ion-item class="portfolioItem" *ngFor="let item of portfolioItems">
 
-      <swiper-container class="siteSlider" #siteSlider navigation="true" pagination="true" zoom="true">
-   
-        <swiper-slide  *ngFor="let sliderItem of item.data">          
-          <a href="{{sliderItem.src}}" target="_blank">
-            <div class="slideImageContainer"> 
-              <img class="slidesImage" src="{{sliderItem.img}}" alt="" >
+        <div class="portfolioItemList" *ngIf="animate">
+          <!-- JOB INFO -->
+          <ion-list lines="none" class="">
+            <!-- header data -->
+            <div style="display: flex; flex-direction: row;" @slideUp>
+
+              <div class="portfolioAvatar">
+
+                <a href="{{item.src}}" target="_blank">
+                  <img class="portfolioAvatarImage" src="{{item.img}}" />
+                </a>
+              </div>
+
+              <div style="display: flex; flex-direction: column;">
+                <h1>{{item.name}}</h1>
+                <p class="workDateRange">{{item.workedFrom}}</p>
+                <h3>{{item.jobTitle}}</h3>
+              </div>
             </div>
-          </a>
-        </swiper-slide>
-  
-      </swiper-container>
-     <!-- </ion-item> -->
+            <!-- positon body -->
+            <div @slideUp>
+              <p class="jobDescText">{{item.desc}}</p>
+              <p class="jobDescText">{{item.myPosition}}</p>
+              <ion-list>
+                <article *ngFor="let task of item.tasks" class="taskItem">
+                  <p class="taskName">
+                    <ion-icon color="warning" name="flash-sharp"></ion-icon>
+                    <b class="task">{{task.nm}}</b>
+                  </p>
+                  <p class="taskItemDesc">
+                    {{task.desc}}
+                  </p>
+                </article>
+              </ion-list>
+            </div>
 
-   
-  </ion-item>
+
+          </ion-list>
+
+          <!-- JOB TOOLS/STACK & GALLERY -->
+          <div class="jobStackGalleryComponent" >
+
+            <div @slideUp>
+              <h3>Tools & Stack</h3>
+
+              <ion-card class="detailCard">
+                <ion-card-content>
+                  <div class="stackIconsItem">
+                    <img *ngFor="let item of item.stack" src="{{item}}" alt="" class="stackIcon">
+                  </div>
+                </ion-card-content>
+              </ion-card>
+
+            </div>
+
+            <!--  -->
+            <div>
+
+              <h3>Gallery</h3>
+
+              <ion-card>
+
+                <ion-card-content>
+                  <swiper-container class="siteSlider" #siteSlider navigation="true" pagination="true" zoom="true">
+
+                    <swiper-slide *ngFor="let sliderItem of item.data">
+                      <a href="{{sliderItem.src}}" target="_blank">
+                        <div class="slideImageContainer">
+                          <div>
+                            <p class="slideTitle">
+                              {{sliderItem.nm}}
+                            </p>
+                          </div>
+                          <img class="slidesImage" src="{{sliderItem.img}}" alt="">
+                        </div>
+                      </a>
+                    </swiper-slide>
+
+                  </swiper-container>
+                </ion-card-content>
+              </ion-card>
+            </div>
+
+          </div>
 
 
- </ion-list>
+        </div>
 
+
+      </ion-item>
+
+
+    </ion-list>
+
+  </div>
 
 </ion-content>

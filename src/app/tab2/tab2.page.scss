@@ -1,12 +1,31 @@
+@use '../../theme/variables.scss' as vars;
+
+.workDateRange {
+    margin: 0;
+    font-size: 15px;
+}
+
+h1,
+h2,
+h3 {
+    color: vars.$tndr1-yellow;
+}
+
 .ion-page {
     flex-direction: column;
 }
 
 .portfolioAvatar {
     border-radius: 50%;
-    top: 0;
-    position: absolute;
-    margin-top: 10px;
+    margin: auto 5% auto 0;
+}
+
+.portfolioAvatarImage {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 2%;
+    background-color: white;
 }
 
 .taskName {
@@ -22,6 +41,13 @@
 
 }
 
+.slideTitle {
+    color: black;
+
+    :visited {
+        color: orange;
+    }
+}
 
 
 .slideImageContainer {
@@ -62,29 +88,27 @@
     margin-left: 5px;
 }
 
-.portfolioAvatarImage {
-    width: 50px;
-    border-radius: 50%;
-    margin-top: 2%;
-    background-color: white;
-    height: 50px;
-}
-
 .portfolioItemList {
     display: flex;
     flex-direction: column;
-    margin-left: 90px;
-    width: 55%;
+    // margin-left: 90px;
+    margin: auto;
+    width: 95%;
 }
 
 .taskItem {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
 }
 
+
+
 .taskItemDesc {
-    width: 75%;
-    margin-left: 2%;
+    width: 100%;
+    margin: auto;
     text-align: justify;
 }
 
@@ -94,8 +118,8 @@
 }
 
 .stackIcon {
-    width: 6%;
-    height: 6%;
+    width: 10%;
+    height: 10%;
     padding: 1%;
 }
 
@@ -105,4 +129,82 @@
 
 .slideElement {
     margin-bottom: 10%;
+}
+
+.portfolioComponent {
+    width: 95%;
+    margin: auto;
+}
+
+.jobStackGalleryComponent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.jobDescText {
+    width: 99%;
+}
+
+.detailCard {
+        background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+
+    .jobDescText {
+        width: 90%;
+    }
+
+
+    .taskItemDesc {
+        width: 75%;
+        margin-left: 2%;
+        text-align: justify;
+    }
+
+    .taskItem {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .portfolioComponent {
+        width: 85%;
+        margin: auto;
+    }
+
+
+    .portfolioAvatar {
+        border-radius: 50%;
+        margin: auto 5% auto 0;
+    }
+
+    .portfolioAvatarImage {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-top: 2%;
+        background-color: white;
+    }
+
+    .portfolioItemList {
+        display: flex;
+        flex-direction: row;
+        // margin-left: 90px;
+        // width: 55%;
+    }
+
+    .jobStackGalleryComponent {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
 }

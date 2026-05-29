@@ -1,4 +1,13 @@
-@use '../../theme/variables.scss';
+@use '../../theme/variables.scss' as vars;
+
+.toolListTitle {
+  font-size: 20px;
+}
+
+h1, h2, h3 {
+ color: vars.$tndr1-yellow;
+}
+
 
 .stackParagraph {
   margin-bottom: 10%;
@@ -14,15 +23,10 @@
   }
 }
 
-.skillIcon {
-  font-size: 18px;
-  margin-right: 15px;
-  color: blueviolet;
-}
 
 .toolIcon {
   font-size: 18px;
-  color: orange;
+  color: yellow;
   margin-left: 1%;
   margin-right: 13px;
 
@@ -30,7 +34,7 @@
 
 .otherToolIcon {
   font-size: 18px;
-  color: orange;
+  color: yellow;
   margin-left: 1%;
   margin-right: 13px;
 
@@ -91,10 +95,15 @@ ion-card-subtitle {
 
 .skillItem {
   width: 100%;
+  --border-color: #2d2d2d;
+  color: white;
 }
 
 .toolItem {
   width: 100%;
+  color: white;
+  --border-color: #2d2d2d;
+
 }
 
 .hobbiesList {
@@ -116,4 +125,70 @@ ion-card-subtitle {
 
 .hobbieCardText {
   text-align: center;
+}
+
+.aboutComponent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 10%;
+}
+
+.skillsPart {
+  width: 95%;
+}
+
+.sideCard {
+  display: none;
+}
+
+.aboutPeeker {
+  display: none;
+}
+
+  .skillIcon {
+    font-size: 22px;
+    color: yellow;
+    margin: auto 15px auto 0;
+    flex-shrink: 0;
+  }
+
+  .skillItemContainer {
+    display: flex;
+    flex-direction: row;
+    
+    p {
+      font-size: 15px;
+      margin: 6% auto;
+    }
+  }
+
+@media screen and (min-width: 800px) {
+
+.skillIcon {
+  font-size: 18px;
+  margin-right: 15px;
+  color: yellow;
+}
+.aboutPeeker {
+  display: inline;
+}
+
+.skillsPart {
+  width: 70%;
+}
+
+.sideCard {
+  display: block;
+}
+
+.aboutComponent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skillsPart {
+  width: 70%;
+}
 }

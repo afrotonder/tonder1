@@ -1,0 +1,258 @@
+// TODO: consolidate these into this file
+@use '../../../assets/afrotonder.scss';
+
+$tndr1-yellow: #e3e144;
+
+.footerContainer {
+    display: flex;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    justify-content: space-between;
+}
+
+.titleSeparator {
+    height: 1px;
+    border: 1px solid red;
+}
+
+.ngmt-15 {
+    // margin-top: -5px;
+}
+
+.projectLink {
+    margin: 0;
+}
+
+.footer-text {
+    color: white !important;
+}
+
+.mainSideMain {
+    // padding-top: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+.contactIcon {
+    width: 25px;
+    margin-right: 15px;
+    transition: transform 0.2s;
+}
+
+.clearBG {
+    --background: none;
+    background-color: transparent;
+}
+
+.jobList {
+    --background: none;
+    background-color: transparent;
+    list-style-type: none;
+}
+
+.job:visited {
+    color: #7fcd91;
+}
+
+.listItem {
+    text-decoration: none;
+    color: white;
+}
+
+.titleContainer {
+    text-align: center;
+    flex-direction: column;
+}
+
+.pfpContainer {
+    width: 100%;
+    // height: 100%;
+    margin: 1% auto 3% auto;
+    display: flex;
+    justify-content: center;
+}
+
+.descriptionContainer {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.titleText {
+    color: white;
+}
+
+.mt-1 {
+    margin-top: 1%;
+}
+
+.titleName {
+    color: $tndr1-yellow;
+}
+
+.titleTextPositions {
+    color: white;
+    width: 325px;
+}
+
+.titleTextMargin {
+    margin: 0;
+}
+
+// .pfp {
+//     // width: 180px;
+//     // height: 180px;
+
+//     // height: 163px;
+//     border-radius: 50%;
+
+//     // border-radius: 15px;
+
+//     width: 163px;
+//     /* or a fixed width */
+//     height: 163px;
+//     /* choose the height you want */
+//     object-fit: cover;
+//     /* crops edges, keeps center */
+//     object-position: center;
+//     display: block;
+// }
+
+.gradientBG {
+    --ion-background-color: none !important;
+    // zinc 
+    // background: #ADA996;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #434343);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #434343);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+:root {
+
+    --ion-background-color: none !important;
+    // zinc 
+    // background: #ADA996;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: #000000;
+    /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to left, #222222, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to left, #222222, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    --ion-default-font: 'ShareTech-Regular' !important;
+    font-family: 'ShareTech-Regular' !important;
+    // --background: none !important;
+    // background-color: red;
+
+
+}
+
+p {
+    color: white;
+
+}
+
+// ion-router-outlet {
+//     // margin-left: 22%;
+//     width: 70%;
+//     margin-left: auto;
+//     // margin-right: auto;
+
+
+// }
+
+ion-tabs {
+    ion-router-outlet {
+        display: contents !important;
+    }
+}
+
+.ion-page {
+    flex-direction: unset !important;
+    // --background: none !important;
+    // background-color: red !important;
+
+}
+
+.mobileFooter {
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin-top: 16%;
+}
+
+.footer {
+    display: none;
+    // bottom: 0;
+    // position: absolute;
+    // margin-right: auto;
+    // width: 95%;
+    // margin-top: 16%;
+}
+
+.menuComponentMobile {
+    display: flex;
+}
+
+// large screens
+@media screen and (min-width: 600px) {
+
+
+    .menuComponentMobile {
+        display: none;
+    }
+
+    .mobileFooter {
+        display: none;
+    }
+
+    .footer {
+        bottom: 0;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+        margin-top: 16%;
+    }
+}
+
+
+.contactIcon:hover {
+    animation: shake 0.4s ease-in-out;
+}
+
+/* Keyframes for shake animation */
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(2px, -2px);
+    }
+
+    60% {
+        transform: translate(-2px, -2px);
+    }
+
+    80% {
+        transform: translate(2px, 2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}

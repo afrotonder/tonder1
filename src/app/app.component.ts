@@ -41,7 +41,7 @@ export class AppComponent {
 
     this.titles = [
       "🧑🏾‍💻Full Stack Developer 📱Mobile Developer",
-      "📿Angular Evangelist 🪙Web3 Consultant",
+      "📿Angular Evangelist ⚛️Ionic Lifer",
     ]
 
     this.jobList = [
@@ -56,11 +56,6 @@ export class AppComponent {
         url: "https://tuchequera.com/"
       },
      
-      // {
-      //   title: "Web3 Consultant",
-      //   employer: "Alebrijes, Alebrijes!",
-      //   url: "alebrijes-alebrijes.com"
-      // },
     ]
 
 

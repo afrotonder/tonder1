@@ -1,0 +1,110 @@
+@use '../../theme/variables.scss' as vars;
+h1, h2, h3 {
+ color: vars.$tndr1-yellow;
+}
+
+.videoIframe {
+    margin: 2% auto;
+    display: flex;
+}
+
+.channelTitleText {
+    margin: 0 auto;
+}
+
+.ytLink {
+    margin-right: 5px;
+    color: vars.$tndr1-yellow;
+}
+
+.miscCard {
+    display: flex;
+    justify-content: center;
+    // flex-direction: column;
+    // width: 330px;
+    // midnight city
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+    border-radius: 15px;
+
+}
+
+.hobbyImage {
+    width: 45%;
+    transition: transform .2s;
+    /* Animation */
+
+}
+
+.hobbyImage:hover {
+    transform: scale(1.6);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.miscCardImg {
+    width: 45%;
+}
+
+
+ion-card-subtitle {
+    color: white !important;
+    font-weight: bold;
+}
+
+.hobbyList {
+display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 170fr));
+    grid-auto-flow: dense;
+    --background: none;
+    background-color: transparent;
+    height: auto;
+    width: 95%;
+    margin: 25px auto 25px auto;
+    justify-content: center;
+}
+
+.hobbyTitle {
+    margin: 20px auto 20px auto;
+    color: vars.$tndr1-yellow;
+}
+
+.hobbyTitleComponent {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto ;
+
+    ion-icon {
+        color: vars.$tndr1-yellow;
+        margin: 0 0 3px 9px;
+    }
+
+    p {
+        color: vars.$tndr1-yellow;
+        font-size: 18px;
+    }
+}
+
+.hobbyCardContent {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.hobbyCardText {
+
+    text-align: center;
+    margin: 5%;    
+    p {
+        font-size: 16px;
+    }
+}
+
+.pageDesc {
+    font-size: 18px;    
+    width: 95%;
+    text-align: justify;
+}

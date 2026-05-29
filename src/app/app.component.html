@@ -1,65 +1,13 @@
 <ion-app>
-  <div class="mainSide">
-
-    <main class="mainSideMain">
-
-      <div class="pfpContainer">
-        <img class="pfp" src="../assets/images/tonderpfp.png" alt="afrotonderPFP">
-      </div>
-
-      <div class="titleContainer">
-        <h2 class="titleName titleTextMargin"> {{uname}} </h2>
-        <h3 class="titleText titleTextMargin"> {{handle}} </h3>
-        <h2 class="titleName titleTextMargin"> {{lastNames}} </h2>
-      
-          <ion-list class="jobList">
-            <div *ngFor="let title of titles" class="listItem clearBG">
-              {{title}} 
-            </div>
-          </ion-list>
-      </div>
-
-
-      <div class="descriptionContainer">
-        <p class="workContainer">Currently working as a:</p>
-        <div>
-          <ion-list class="jobList ngmt-15">
-            <div *ngFor="let job of jobList" class="listItem clearBG">
-              {{job.title}} &#64; <a class='job' href="{{job.url}}" target="_blank">{{job.employer}}</a>
-            </div>
-          </ion-list>
-        </div>
-      </div>
-       <div class="descriptionContainer">
-        <p class="workContainer">Notable Projects:</p>
-          <ion-list class="jobList ngmt-15">
-            <div *ngFor="let proj of highlightProjects" class="listItem clearBG">
-              <p *ngIf="proj.url!==''" class="projectLink">⚡<a  class='job' href="{{proj.url}}" target="_blank">{{proj.title}}</a></p>
-              
-              <ion-list *ngIf="proj.url===''" style="display: flex; flex-direction: column;">
-                <p class="projectLink">⚡<a class='job' href="{{proj.urls[0]}}" target="_blank">{{proj.title}} (iOS) </a></p>
-                <p class="projectLink">⚡<a class='job' href="{{proj.urls[1]}}" target="_blank">{{proj.title}} (Android)</a></p>
-              </ion-list>
-            </div>
-          </ion-list>
-      </div>
-
-
-      <div class="footer">
-        <p id="mobile-hmu" class="workContainer">Contact me: </p>
-        <div class="mt-1">
-          <a *ngFor="let contact of contactIcons" href="{{contact.url}}" target="_blank">
-            <img class="contactIcon" src="{{contact.source}}" alt="{{contact.alt}}">
-          </a>
-        </div>
-
-        <div class="footer-text-container">
-          <p class="footer-text">{{footer}}</p>
-        </div>
-      </div>
-    </main>
-
-  </div>
-  <ion-router-outlet></ion-router-outlet>
+  
+  <!-- might not use this cause i like tabs  -->
+   <!-- <ion-menu menuId="mainMenu" contentId="mainContent" side="start">
+    <ion-content>
+        <app-mobile-menu></app-mobile-menu>      
+    </ion-content>
+  </ion-menu> -->
+  
+  <!-- main tabs app -->
+  <ion-router-outlet id="mainContent"></ion-router-outlet>
 
 </ion-app>
